@@ -9,12 +9,11 @@ require 'awesome_print'
 module Greeby
 
   module Binding
-
   end
 
   class Builder
 
-    attr_reader :c
+    attr_reader :c, :config
 
     def initialize
       @root = File.expand_path('../../', __FILE__)
@@ -23,6 +22,7 @@ module Greeby
       @pages_path = File.join(@root, 'pages')
       @static_path = File.join(@root, 'site')
       @json_path = File.join(@root, 'json')
+      @config = to_ostruct(YAML::load_file(File.join(@root, 'config.yml')))
     end
 
     def make_letter(source)
@@ -103,6 +103,7 @@ module Greeby
         page.content = RDiscount.new(File.read(p)).to_html
         letters = JSON.parse(File.read(File.join(@static_path, 'editions.json')))
         page.letters = Hash[letters.sort_by { |edition,data| -(edition.to_i) }]
+        page.config = @config
         html = haml_engine.render(page)
         File.open(File.join(@static_path, "#{page.name}.html"),'w') do |f|
           f.puts html

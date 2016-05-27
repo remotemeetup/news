@@ -1,0 +1,22 @@
+
+<h1>#<%= @c.edition %> - <%= @c.pubdate %></div>
+<% @c.topics.each do |t| %>
+<h3><%= t.title %></h3>
+<div><%= t.baseline %></div>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<% t.links.each do |l| %>
+<tr><td style="color:#aaaaaa;">
+<a href="<%= l.url %>"><%= l.title %></a> <% if l.duration %><span>(<%= l.duration %>)</span><% end %>
+</td><td style="color:#aaaaaa;">
+<%= l.pubdate %>
+<% if l.tags %><% l.tags.each do |tag| %>
+<img class="icon" src="http://greenruby.org/ico/<%= tag %>.png" height="18" width="18" align="right" alt="<%= tag %>" />
+<% end %><% end %>
+</td></tr>
+<tr><td colspan="2">
+<%= l.comment %>
+</td></tr>
+<% end %>
+</table>
+<% end %>
+

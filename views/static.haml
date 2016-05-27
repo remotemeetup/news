@@ -9,17 +9,17 @@
     %meta{ charset: "utf-8" }
     %meta{ content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
     %title
-      Remote Meetup News
+      config.title
       - if name
         = ": #{name}"
-    %meta{ content: "All the news about Remote Meetups, the incoming events, the life of the community, the news from the front.", name: "description" }
-    %meta{ content: "meetup, remote, community, collaboration, geeks, webdev, techies", name: "keywords" }
+    %meta{ content: config.description, name: "description" }
+    %meta{ content: config.keywords, name: "keywords" }
     %meta{ content: "width=device-width, minimum-scale=1.0, maximum-scale=1.0", name: "viewport" }
     %meta{ content: "/img/remote-meetup.png", itemprop: 'image' }
     %meta{ content: "/img/remote-meetup.png", property: 'og:image' }
     %meta{ content: "mose", name: 'author' }
-    %meta{ content: "Remote Meetup News", property: 'og:site_name' }
-    %meta{ content: "info@remotemeetup.com", property: 'og:email' }
+    %meta{ content: config.title, property: 'og:site_name' }
+    %meta{ content: config.contact_email, property: 'og:email' }
     %meta{ content: "http://news.remotemeetup.com", property: 'og:url' }
     %meta{ content: "Remote Meetup News#{": #{name}" if name}", property: 'og:title' }
     %meta{ content: "All the news about Remote Meetups, the incoming events, the life of the community, the news from the front.", property: 'og:description' }
@@ -88,7 +88,7 @@
             %p
             %p
               %input.form-control(name="EMAIL" placeholder="email address" type="email")
-              %input(type="hidden" name="xxxxxxxxxxxxxxxxx" value="")
+              %input(type="hidden" name="#{config.mailchimp_token}" value="")
               %input.form-control.btn.btn-primary(type="submit" name="subscribe" value="Subscribe")
           %small.text-center Email distribution is powered by Mailchimp.
           %p
@@ -107,7 +107,7 @@
               <script async defer src="http://remotemeetup.herokuapp.com/slackin.js"></script>
 
     #footer
-      %a{ href: 'mailto:info@remotemeetup.com', class: 'contact'}
+      %a{ href: "mailto:#{config.contact_email}", class: 'contact'}
         contact
       The Remote Meetup Newsletter is <a href="https://github.com/remotemeetup/news">openly</a> published by <a href="https://github.com/orgs/remotemeetup/people">the RM Team</a>
       .copyright
