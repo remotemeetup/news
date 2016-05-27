@@ -1,0 +1,27 @@
+---
+template: v1
+edition: "1"
+pubdate: "may 28th 2016"
+intro:
+  "####
+"
+
+done:
+  title: "What we have done so far."
+  links:
+    - title: ""
+      url: ""
+      comment: ""
+      tags:
+        - design
+
+
+upcoming:
+  categories: 
+    - title: Go
+      links:
+        - title: My first App with Go 
+          url: My first App with Go 
+
+blog:
+  intro:

@@ -1,0 +1,28 @@
+---
+edition: "1"
+pubdate: "jun 5th 2016"
+intro:
+  "#### 
+"
+
+sections:
+
+- title: Done
+  baseline:
+    "What we have done so far."
+  links:
+
+  - title: ""
+    url: ""
+    comment: ""
+    tags:
+      - design
+
+
+- title: Upcoming
+  categories: 
+    - title: Go
+      links:
+        - title: My first App with Go 
+          url: My first App with Go 
+
