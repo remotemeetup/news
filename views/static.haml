@@ -1,0 +1,123 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js lt-ie9">
+/ [if gt IE 8]><!
+%html
+  / <![endif]
+  %head
+    %meta{ charset: "utf-8" }
+    %meta{ content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %title
+      Remote Meetup News
+      - if name
+        = ": #{name}"
+    %meta{ content: "All the news about Remote Meetups, the incoming events, the life of the community, the news from the front.", name: "description" }
+    %meta{ content: "meetup, remote, community, collaboration, geeks, webdev, techies", name: "keywords" }
+    %meta{ content: "width=device-width, minimum-scale=1.0, maximum-scale=1.0", name: "viewport" }
+    %meta{ content: "/img/remote-meetup.png", itemprop: 'image' }
+    %meta{ content: "/img/remote-meetup.png", property: 'og:image' }
+    %meta{ content: "mose", name: 'author' }
+    %meta{ content: "Remote Meetup News", property: 'og:site_name' }
+    %meta{ content: "info@remotemeetup.com", property: 'og:email' }
+    %meta{ content: "http://news.remotemeetup.com", property: 'og:url' }
+    %meta{ content: "Remote Meetup News#{": #{name}" if name}", property: 'og:title' }
+    %meta{ content: "All the news about Remote Meetups, the incoming events, the life of the community, the news from the front.", property: 'og:description' }
+
+    %link{ href: "feed.rss", rel: "alternate", title: "Green Ruby", type: "application/rss+xml" }
+    %link{ href: "css/bootstrap.min.css", rel: "stylesheet" }
+    %link{ href: "css/bootstrap-theme.min.css", rel: "stylesheet" }
+    %link{ href: "css/rmn.css", rel: "stylesheet" }
+    %script{ src: "js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" }
+  %body
+    /[if lt IE 7]
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+
+    .navbar.navbar-default.navbar-fixed-top.topnav(role="navigation")
+      .navbar-inner
+        .container
+          .navbar-header
+            %button.navbar-toggle( data-toggle="collapse" data-target="#navcollapse" )
+              %span.sr-only Toggle navigation
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            %a{ href: 'index.html', class: "navbar-brand logoized" }
+              Remote Meetup
+              %span News
+          .collapse.navbar-collapse.navbar-right#navcollapse
+            %ul.nav.navbar-nav
+              %li
+                %a{ href: 'http://news.remotemeetup.com'} remotemeetup.com
+              %li
+                %a{ href: 'index.html'} Home
+              %li
+                %a{ href: 'about.html'} About
+              %li
+                %a{ href: 'mailto:info@remotemeetup.com'} Contact
+              %li
+                %a{ href: "feed.rss"}
+                  %img{ src: "img/rss.png" }
+
+    .container
+      .row
+        .col-sm-3.col-md-2.leftbar.hidden-print
+          %h3( data-toggle="collapse" data-target="#letters-collapse" )
+            Archives
+          .collapse.navbar-collapse#letters-collapse
+            %ul.nav.nav-sidebar.letters
+              - letters.each do |num, letter|
+                %li{ class: "#{letter['date'][/20[0-9]{2}/]}" }
+                  %a{ href: letter['link'] }
+                    = num
+                    %span.date= letter['date'].gsub(/ [0-9]+$/,'')
+
+        .col-sm-9.col-md-7.main
+          = content
+
+        .col-sm-12.col-md-3.rightbar.hidden-print
+          %p.header Remote Meetups, screencasts, Interviews, Lightning talks. Remote.
+          %p
+          %form{ action: "http://greenruby.us6.list-manage.com/subscribe/post?u=f1b3b59d2383eeb07537f6440&amp;id=7136c985cf", method: 'post'}
+            .text-center
+              %b Subscribe
+            .text-center
+              to the
+            .text-center
+              %b Remote Meetups Newsletter
+            %p
+            %p
+              %input.form-control(name="EMAIL" placeholder="email address" type="email")
+              %input(type="hidden" name="xxxxxxxxxxxxxxxxx" value="")
+              %input.form-control.btn.btn-primary(type="submit" name="subscribe" value="Subscribe")
+          %small.text-center Email distribution is powered by Mailchimp.
+          %p
+          %ul.social
+            Remote Meetups on
+            %li
+              %a{ href: "https://www.youtube.com/channel/UCLa6UKKHaHE0PCqA73m8Irw", rel:"publisher"}Youtube
+            %li
+              %a{ href: "https://github.com/remotemeetup", rel:"publisher"}Github
+            %li
+              %a{ href: "https://twitter.com/remotemeetup", rel:"publisher"}Twitter
+            %li
+              %a{ href: "https://facebook.com/remotemeetup", rel:"publisher"}Facebook
+            %li
+              %br
+              <script async defer src="http://remotemeetup.herokuapp.com/slackin.js"></script>
+
+    #footer
+      %a{ href: 'mailto:info@remotemeetup.com', class: 'contact'}
+        contact
+      The Remote Meetup Newsletter is <a href="https://github.com/remotemeetup/news">openly</a> published by <a href="https://github.com/orgs/remotemeetup/people">the RM Team</a>
+      .copyright
+        Copyright &copy; 2015-2016 the RM Team
+        %a( rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/")
+          %img( alt="Creative Commons License" style="border-width:0" src="img/cc-80x15.png" )
+
+    %script{ src: "http://code.jquery.com/jquery-1.10.2.min.js"}
+    :javascript
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
+
+    %script{ src: "js/bootstrap.min.js" }
+    %script{ src: "js/static.js" }
