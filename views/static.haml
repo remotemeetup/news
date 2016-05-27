@@ -48,13 +48,13 @@
           .collapse.navbar-collapse.navbar-right#navcollapse
             %ul.nav.navbar-nav
               %li
-                %a{ href: 'http://news.remotemeetup.com'} remotemeetup.com
+                %a{ href: 'http://news.remotemeetup.com' } remotemeetup.com
               %li
-                %a{ href: 'index.html'} Home
+                %a{ href: 'index.html' } Home
               %li
-                %a{ href: 'about.html'} About
+                %a{ href: 'about.html' } About
               %li
-                %a{ href: 'mailto:info@remotemeetup.com'} Contact
+                %a{ href: 'mailto:#{config.contact_email}' } Contact
               %li
                 %a{ href: "feed.rss"}
                   %img{ src: "img/rss.png" }
@@ -94,14 +94,10 @@
           %p
           %ul.social
             Remote Meetups on
-            %li
-              %a{ href: "https://www.youtube.com/channel/UCLa6UKKHaHE0PCqA73m8Irw", rel:"publisher"}Youtube
-            %li
-              %a{ href: "https://github.com/remotemeetup", rel:"publisher"}Github
-            %li
-              %a{ href: "https://twitter.com/remotemeetup", rel:"publisher"}Twitter
-            %li
-              %a{ href: "https://facebook.com/remotemeetup", rel:"publisher"}Facebook
+            - config.social.each do |s|
+              %li{ class: "#{s['title'].downcase}" }
+                %a{ href: s['url'], rel:"publisher"}
+                  = s['title']
             %li
               %br
               <script async defer src="http://remotemeetup.herokuapp.com/slackin.js"></script>

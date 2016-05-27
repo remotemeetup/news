@@ -4,3 +4,12 @@ description: All the news about Remote Meetups, the incoming events, the life of
 keywords: meetup, remote, community, collaboration, geeks, webdev, techies
 contact_email: info@remotemeetup.com
 mailchimp_token: xxxxx
+social:
+  - title: Youtube
+    url: https://www.youtube.com/channel/UCLa6UKKHaHE0PCqA73m8Irw
+  - title: Github
+    url: https://github.com/remotemeetup
+  - title: Twitter
+    url: https://twitter.com/remotemeetup
+  - title: Facebook
+    url: https://facebook.com/remotemeetup
