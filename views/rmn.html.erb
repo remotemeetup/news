@@ -67,11 +67,11 @@ table.meat tr td.comment { padding-bottom: 8px; }
 <td align="center" valign="top">
 <div id="wrapper">
 <div id="templatePreheader">
-<div><div class="title"><%= @c.config.title %></div>
+<div><div class="title"><%= @config.title %></div>
 <div class="view">
 <!-- *|IFNOT:ARCHIVE_PAGE|* -->
 Is this email not displaying correctly?
-<a href="<%= @c.config.base_url %>/<%= @c.edition %>.html" target="_blank">View it in your browser</a>.
+<a href="<%= @config.base_url %>/<%= @c.edition %>.html" target="_blank">View it in your browser</a>.
 <!-- *|END:IF|* -->
 </div>
 </div>
@@ -80,7 +80,7 @@ Is this email not displaying correctly?
 <div id="templateHeader">
 <img src="http://greenruby.org/img/green-ruby-68.png" id="headerImage">
 <div>
-<h1><%= @c.config.title %> #<%= @c.edition %></h1>
+<h1><%= @config.title %> #<%= @c.edition %></h1>
 <div><%= @c.pubdate %></div>
 </div>
 </div>
@@ -107,21 +107,18 @@ Is this email not displaying correctly?
 <h2><%= @c.upcoming.title %></h2>
 <% @c.upcoming.categories.each do |cat| %>
 <h3><%= cat.title %></h3>
+<% if cat.comment %><div><%= cat.comment %></div><% end %>
+<% if cat.links %>
 <% cat.links.each do |t| %>
 <div class="baseline"><%= t.title %></div>
 <div class="link"><a href="<%= t.url %>"><%= t.title %></a></div>
+<% end %>
+<% end %>
 <% end %>
 
 <hr>
 
-<h2><%= @c.outro_html %></h2>
-<% @c.upcoming.categories.each do |cat| %>
-<h3><%= cat.title %></h3>
-<% cat.links.each do |t| %>
-<div class="baseline"><%= t.title %></div>
-<div class="link"><a href="<%= t.url %>"><%= t.title %></a></div>
-<% end %>
-
+<div class="baseline"><%= @c.outro_html %></div>
 
 
 <hr>

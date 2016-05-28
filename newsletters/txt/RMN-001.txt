@@ -1,0 +1,61 @@
+----------------------------------------------------
+Remote Meetup News #001 - may 28th 2016
+----------------------------------------------------
+## blah 
+----------------------------------------------------
+What we have done so far
+
+
+
+
+
+
+----------------------------------------------------
+Upcoming Meetups
+
+Go
+
+
+
+My first App with Go https://www.bigmarker.com/remote-meetup-go/Tutorial-My-First-App-with-Go
+
+
+
+
+Ruby
+
+
+
+Green Ruby Meetup https://www.bigmarker.com/remote-meetup/Green-Ruby-Meetup-001
+
+
+
+
+Elm
+Stay tunned on #organizers-elm channel to see the latest news!
+
+
+
+----------------------------------------------------
+<p>We are really happy with those news! Hope you are also too! We still need help for organising the last meetups. If you want to help, join our slack and use the channel #organizers!
+To complete, I would like to say a big thanks for everyone, specially: Iuri Fernandes, Carlisia Campos, William Kennedy, Filipe Costa, Narayan Chowdhury, Tad Hosford, Sebastian Sogamoso, Mose, João Moura, Lucas Amaral, André Mota and all the persons for our Slack channel!</p>
+
+
+====================================================
+EOF
+
+Feel free to send us feedback or information at
+news@greenruby.org
+
+follow on Twitter @greenrubist
+forward to a friend *|FORWARD|*
+Subscribe *|LIST:SUBSCRIBE|*
+
+Copyright (c) *|CURRENT_YEAR|* Mose
+http://creativecommons.org/licenses/by-sa/3.0/
+This publication is licensed under a
+Creative Commons Attribution-ShareAlike 3.0 License
+
+
+
+

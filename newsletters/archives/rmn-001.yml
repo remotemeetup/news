@@ -1,0 +1,44 @@
+---
+template: v1
+edition: "001"
+pubdate: "may 28th 2016"
+edito:
+  "## blah
+"
+
+done:
+  title: "What we have done so far"
+  links:
+    - title: ""
+      url: ""
+      comment: ""
+
+upcoming:
+  title: "Upcoming Meetups"
+  categories: 
+    - title: Go
+      links:
+        - title: My first App with Go 
+          url: https://www.bigmarker.com/remote-meetup-go/Tutorial-My-First-App-with-Go
+    - title: Ruby
+      links:
+        - title: Green Ruby Meetup 
+          url: https://www.bigmarker.com/remote-meetup/Green-Ruby-Meetup-001
+    - title: Elm
+      comment: "Stay tunned on #organizers-elm channel to see the latest news!"
+
+outro:
+  content:
+    "We are really happy with those news! Hope you are also too! We still need help for organising the last meetups. If you want to help, join our slack and use the channel #organizers!
+
+To complete, I would like to say a big thanks for everyone, specially: Iuri Fernandes, Carlisia Campos, William Kennedy, Filipe Costa, Narayan Chowdhury, Tad Hosford, Sebastian Sogamoso, Mose, João Moura, Lucas Amaral, André Mota and all the persons for our Slack channel!"
+  links_title: Latest from our blog
+  links:
+    - title: ""
+      url: ""
+      comment: ""
+
+signature:
+  "Franzé Jr.
+
+Founder of Remote Meetup"

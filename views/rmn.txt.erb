@@ -1,29 +1,29 @@
 ----------------------------------------------------
-Green Ruby News #<%= c.edition %> - <%= c.pubdate %>
+<%= @config.title %> #<%= @c.edition %> - <%= @c.pubdate %>
 ----------------------------------------------------
-*|IFNOT:CONTENT=Only Rant|*
-<% c.topics.each do |t| %>
-<%= t.title %>
+<%= @c.edito_txt %>
 ----------------------------------------------------
-<%= t.baseline %>
-<% t.links.each do |l| %>
-*<%= l.title %>* (<% if l.tags %><%= l.tags.join(", ") %><% if l.pubdate %> - <%= l.pubdate %><% end %><% if l.duration %> - <%= l.duration %><% end %>)<% end %>
-<%= l.url %>
-<%= l.comment %>
-<% end %><% end %>
-. . . . . . . . . . . . . . . . . . . . . . . . . .
-<% if @c.contributors %>Links curated by by mose (editor), <%= @c.contributors %> (informers)<% elsif @c.editors 
-%>Links curated by by mose (publisher), <%= @c.editors %> (editors)<% if @c.participants %>, <%= @c.participants %> (contributors)<% end %><% end %>.
-*|END:IF|*
-*|IFNOT:CONTENT=Only Links|*
-<% if @c.rant != '' %>
-Rant
-----------------------------------------------------
-The random rant of the week by <%= @c.rant.author rescue 'mose' %>.
+<%= @c.done.title %>
 
-<%= @c.rant_txt %>
+<% @c.done.links.each do |t| %>
+<%= t.title %>
+<%= t.url %>
+<%= t.comment %>
 <% end %>
-*|END:IF|*
+----------------------------------------------------
+<%= @c.upcoming.title %>
+<% @c.upcoming.categories.each do |cat| %>
+<%= cat.title %>
+<% if cat.comment %><%= cat.comment %><% end %>
+<% if cat.links %>
+<% cat.links.each do |t| %>
+<%= t.title %> <%= t.url %>
+<% end %>
+<% end %>
+
+<% end %>
+----------------------------------------------------
+<%= @c.outro_html %>
 
 ====================================================
 EOF

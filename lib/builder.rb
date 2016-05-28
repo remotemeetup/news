@@ -4,7 +4,7 @@ require 'fileutils'
 require 'rdiscount'
 require 'haml'
 require 'json'
-# require 'awesome_print'
+require 'awesome_print'
 
 module Greeby
 

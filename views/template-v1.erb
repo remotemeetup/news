@@ -1,57 +1,46 @@
 <div id="templateContainer">
 <div id="templateHeader">
-<h1 style="text-align:right;margin-bottom:0;">#<%= @c.edition %> - <%= @c.pubdate %></h1>
+
+<h1><%= @config.title %> #<%= @c.edition %></h1>
+<div><%= @c.pubdate %></div>
+</div>
 </div>
 <div id="templateBody">
-<% if @c.edito %>
+
 <div>
 <div class="baseline">
-<h2>Edito</h2>
-<%= @c.edito %>
+<%= @c.edito_html %>
+<br>
 <br>
 </div>
-</div>
-<% end %>
 
+<hr>
+
+<h2><%= @c.done.title %></h2>
 <% @c.done.links.each do |t| %>
-<h3><%= t.title %></h3>
-<div class="baseline"><%= t.baseline %></div>
-<table cellpadding="0" cellspacing="0" border="0" class="meat">
-<% t.links.each do |l| %>
-<tr><td>
-<a href="<%= l.url %>" class="linktitle"><%= l.title %></a>
-<% if l.duration %><span class="duration">(<%= l.duration %>)</span><% end %>
-</td><td class="date">
-<%= l.pubdate %><% if l.tags %><% l.tags.each do |tag| %>
-<img class="icon" src="ico/<%= tag %>.png" height="18" width="18" align="right" alt="<%= tag %>" />
-<% end %><% end %></td></tr>
-<tr><td colspan="2" class="comment">
-<%= l.comment %>
-</td></tr>
-<% end %>
-</table>
+<div class="baseline"><%= t.title %></div>
+<div class="link"><a href="<%= t.url %>"><%= t.title %></a></div>
+<div class="comment"><%= t.comment %></div>
 <% end %>
 
-<div class="baseline" style="border-top: 1px solid #ccc">
-<% if @c.contributors %>
-<i>Links curated by mose (editor), <%= @c.contributors %> (informers).</i>
-<% elsif @c.editors %>
-<i>Links curated by mose (publisher), <%= @c.editors %> (editors)
-<% if @c.participants %>, <%= @c.participants %> (contributors)<% end %>
-.</i>
-<% else %>
-<i>Links curated by mose (editor).</i>
-<% end %>
-</div>
+<hr>
 
-<% if @c.rant && @c.rant != '' %>
-<div id="rant">
-<h3>Rant</h3>
-
-<div class="baseline"><i>The random rant of the week by <%= @c.rant.author rescue 'mose' %>.</i></div>
-<%= @c.rant_html %>
-</div>
+<h2><%= @c.upcoming.title %></h2>
+<% @c.upcoming.categories.each do |cat| %>
+<h3><%= cat.title %></h3>
+<% if cat.comment %><div><%= cat.comment %></div><% end %>
+<% if cat.links %>
+<% cat.links.each do |t| %>
+<div class="baseline"><%= t.title %></div>
+<div class="link"><a href="<%= t.url %>"><%= t.title %></a></div>
 <% end %>
+<% end %>
+<% end %>
+
+<hr>
+
+<div class="baseline"><%= @c.outro_html %></div>
+
 
 </div>
 </div>
