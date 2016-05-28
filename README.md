@@ -72,6 +72,7 @@ The publication process follow those steps:
 - at the last step, upload the `newsletter/txt/RMN-001.txt` file as a text version for the campaign
 - click send, verify your mailbox
 
+Honestly we could use the mailchimp api to automate the process, but I feel this manual process provides the incentive to re-verify and verify again that there is no mistake, visual problem, etc...
 
 Web Deployment
 ---------------
