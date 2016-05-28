@@ -5,21 +5,20 @@
 <meta property="og:title" content="*|MC:SUBJECT|*">
 <title>*|MC:SUBJECT|*</title>
 <style type="text/css">
-#outlook a{
-  padding:0;
-}
-body { width:100% !important; -webkit-text-size-adjust:none; margin:0; padding:0; }
+#outlook a{ padding:0; }
+body { font-family: sans serif; width:100% !important; -webkit-text-size-adjust:none; margin:0; padding:0; }
 img{ border:none; font-size:14px; font-weight:bold; height:auto; line-height:100%; outline:none; text-decoration:none; text-transform:capitalize; }
 #backgroundTable { height:100% !important; margin:0; padding:0; width:100% !important; }
 body,.backgroundTable { background-color:#fcfcfc; }
 #templateContainer { background-color:#fff; }
-#wrapper { width:600px; border:1px solid #000000; }
-h1 { color:#202020; display:block; font-size:30px; font-weight:bold; line-height:100%; margin-bottom:0px; margin-top:0; text-align: right; }
-h2 { color:#202020; display:block; font-weight:bold; line-height:100%; margin-top:6px; margin-bottom:3px; text-align:left; border-top:1px solid #000; border-bottom:1px dashed #ccc; padding:5px 0 2px 0; font-size:18px; text-transform:uppercase; }
-h3 { color:#202020; display:block; font-size:26px; font-weight:bold; line-height:100%; margin-bottom:0; text-align:left; }
+#wrapper { width:600px; text-align: left; }
+h1 { color:#202020; display:block; font-size:24px; font-weight:bold; line-height:100%; margin-bottom:0px; margin-top:0; }
+h2 { color:#202020; display:block; font-size:20px; font-weight:bold; line-height:100%; margin-top:6px; margin-bottom:3px; text-align:left; padding:5px 0 2px 0; }
+h3 { color:#202020; display:block; font-size:16px; font-weight:bold; line-height:100%; margin-bottom:0; text-align:left; }
 ul { padding-left:15px; margin:5px 0; }
-#templatePreheader { background-color:#fff; padding:10px; padding-bottom:10px; }
-#templatePreheader div { font-size:10px; line-height:100%; text-align:center; }
+
+#templatePreheader { background-color:#fff; padding:10px; padding-bottom:30px; }
+#templatePreheader div { font-size:12px; line-height:120%; text-align:center; }
 #templatePreheader div a:link,#templatePreheader div a:visited { color:#eddf26; font-weight:bold; text-decoration:none; }
 #templatePreheader div.title { font-size:14px; font-weight:bold; }
 
@@ -28,7 +27,7 @@ ul { padding-left:15px; margin:5px 0; }
 #templateHeader #headerImage { position:absolute; left:20px; top:-10px; float:left; }
 
 #templateBody { background-color:#ffffff; margin-top: -15px; padding: 10px 20px; clear:both; }
-#templateBody div, #templateBody td { color: #505050; font-family: Arial, sans serif; font-size: 14px; line-height: 150%; }
+#templateBody div, #templateBody td { color: #505050; font-size: 14px; line-height: 150%; }
 #templateBody a:link,#templateBody a:visited { color:#297b4e; font-weight:bold; text-decoration:underline; }
 #templateBody td.date { text-align: right; font-size: 12px; font-weight: bold; color: #aaa; }
 
@@ -50,7 +49,8 @@ ul { padding-left:15px; margin:5px 0; }
 #poweredby { padding:10px; }
 #poweredby a { width:300px; font-size:12px; font-family:Courier new, monospace; color:#217844; text-decoration:none; }
 #poweredby a:hover { color:#ffffff; }
-.baseline { padding-bottom: 8px; text-align: left; font-style: italic; color: #666; }
+
+.baseline { padding-bottom: 8px; text-align: left; color: #666; }
 .duration { font-size: 12px; font-weight: bold; color: #999; font-family: Courier new, monospace; }
 table.meat { width: 100%; border: 0; }
 table.meat tr:hover td { background-color: #eee; }
@@ -66,52 +66,76 @@ table.meat tr td.comment { padding-bottom: 8px; }
 </style>
 </head>
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+
 <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable">
-<tr>
-<td align="center" valign="top">
+<tr><td align="center" valign="top">
+
 <div id="wrapper">
+
 <div id="templatePreheader">
-<div><div class="title">Remote Meetup News</div>
+<div>
+<div class="title">Remote Meetup News  #001 - may 28th 2016</div>
 <div class="view">
 <!-- *|IFNOT:ARCHIVE_PAGE|* -->
 Is this email not displaying correctly?
-<a href="http://news.remotemeetup.com/001.html" target="_blank">View it in your browser</a>.
+<a href="http://news.remotemeetup.com/rmn-001.html" target="_blank">View it in your browser</a>.
 <!-- *|END:IF|* -->
 </div>
 </div>
 </div>
+
 <div id="templateContainer">
-<div id="templateHeader">
-<div>
-<h1>Remote Meetup News #001</h1>
-<div>may 28th 2016</div>
-</div>
-</div>
 <div id="templateBody">
 
 <div>
-<div class="baseline">
-<h2>blah</h2>
-<br>
-<br>
+<div class="baseline"><h1>How is it going with Remote Meetups?</h1>
+
+<p>It's been a while that you have logged in our Slack Channel. I would like to just to say how we are going and the latest updates!</p>
+
+<p>Doing a Remote Meetup is a little bit difficult, because users report don't have the same feeling as a real meetup. For this reason, We were looking for some tools for helping us to do that. Here, a big thanks to Carlisia Campos and William Kennedy, <a href="http://golangbridge.org">GoBridge</a> in general, people from our Go branch who have found a Nice tool: <a href="https://www.bigmarker.com">BigMarker</a>.</p>
+
+<p>BigMarker is a paid tool, we got a sponsorship from <a href="https://www.hired.com">Hired.com</a> which helped us to pay this Main Channel for Remote Meetup. <a href="https://www.bigmarker.com/remote-meetup">Channel is here!</a> Using this, the attendees interaction will be better. If you want, you can subscribe to this channel and get the latest meetups! We have a paid account up to 100 users.</p>
+
+<p>Go Branch got a sponsorship from Compose.io, which helped them to pay <a href="https://www.bigmarker.com/remote-meetup-go">their own channel</a>. It means, all the Remote Meetups from Go will be centralised in a single channel and not the Main Channel. BTW, if you want to learn Go, it's time! A lot of awesome upcoming meetups in the next weeks!</p>
+
+<h2>Helping Meetups around the World</h2>
+
+<p>Another idea we got on-the-fly was helping meetups. We are partner of two Meetups around the world: ParisRb - the biggest meetup in Europe. Green Ruby - A cool meetup in Taipei, Taiwan! These meetups can use or channel and livestream their meetups.</p>
+
+<h2>Elm Remote Meetup</h2>
+
+<p><a href="https://www.dailydrip.com/">DailyDrip</a> is <a href="https://www.dailydrip.com/blog/organizing-a-remote-meetup-for-elm">planning</a> to create a Elm Remote Meetup. We are also partner with DailyDrip. They will be using our Channel and using Remote Meetup to do that!</p>
 </div>
 
 <hr>
 
 <h2>What we have done so far</h2>
-<div class="baseline"></div>
-<div class="link"><a href=""></a></div>
-<div class="comment"></div>
+<div class="link"><a href="https://www.youtube.com/watch?v=sBkN513ShkQ">Rust for Rubyist</a></div>
+<div class="comment">by Filipe Costa</div>
+<div class="link"><a href="https://www.youtube.com/watch?v=Kp5EHh-VEb0">Building APIs on Rails 5 with AMS</a></div>
+<div class="comment">by João Moura</div>
+<div class="link"><a href="https://www.youtube.com/watch?v=SCzFGmM-Sto">Trailblazer with Nick Sutterer</a></div>
+<div class="comment">Interview with Nick Sutterer</div>
+<div class="link"><a href="https://www.youtube.com/watch?v=fcgS9epbptY">Introduction to phoenix channels</a></div>
+<div class="comment">by Iuri Fernandes</div>
+<div class="link"><a href="https://youtu.be/idifdePbVGM">ChatOps - When communication matters</a></div>
+<div class="comment">by Rajat Gupta</div>
+<div class="link"><a href="https://www.youtube.com/watch?v=2pEjxcNDsMA">An Interview with Rafael França</a></div>
+<div class="comment">Rails Core Commiter</div>
+<div class="link"><a href="https://www.youtube.com/watch?v=bx3mOTGRvs4">Introduction to Functional Reactive Programming with Elm</a></div>
+<div class="comment">by Isaac Shapira</div>
 
 <hr>
 
 <h2>Upcoming Meetups</h2>
 <h3>Go</h3>
-<div class="baseline">My first App with Go</div>
 <div class="link"><a href="https://www.bigmarker.com/remote-meetup-go/Tutorial-My-First-App-with-Go">My first App with Go</a></div>
+<div class="link"><a href="https://www.bigmarker.com/remote-meetup-go/Shipping-Go-Applications-with-Containers">Shipping Go Applications with Containers</a></div>
+<div class="link"><a href="https://www.bigmarker.com/remote-meetup-go/Go-at-Dropbox">Go at Dropbox</a></div>
 <h3>Ruby</h3>
-<div class="baseline">Green Ruby Meetup</div>
 <div class="link"><a href="https://www.bigmarker.com/remote-meetup/Green-Ruby-Meetup-001">Green Ruby Meetup</a></div>
+<div class="link"><a href="https://www.bigmarker.com/remote-meetup/ParisRb-June-7">ParisRb - 7 June</a></div>
+<div class="link"><a href="https://www.bigmarker.com/remote-meetup/An-interview-with-Mike-Perham-Sidekiq-creator">An interview with Mike Perham - Sidekiq creator</a></div>
 <h3>Elm</h3>
 <div>Stay tunned on #organizers-elm channel to see the latest news!</div>
 <hr>

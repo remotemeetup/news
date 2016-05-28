@@ -3,27 +3,122 @@ template: v1
 edition: "001"
 pubdate: "may 28th 2016"
 edito:
-  "## blah
+  "# How is it going with Remote Meetups?
+
+
+It's been a while that you have logged in our Slack Channel. I would like to 
+just to say how we are going and the latest updates! 
+
+
+Doing a Remote Meetup is a little bit difficult, because users report don't 
+have the same feeling as a real meetup. For this reason, We were looking for 
+some tools for helping us to do that. Here, a big thanks to Carlisia Campos 
+and William Kennedy, [GoBridge][1] in general, people from our Go branch who have 
+found a Nice tool: [BigMarker][2]. 
+
+
+BigMarker is a paid tool, we got a sponsorship from [Hired.com][3] which helped us 
+to pay this Main Channel for Remote Meetup. [Channel is here!][4] Using this, the 
+attendees interaction will be better. If you want, you can subscribe to this 
+channel and get the latest meetups! We have a paid account up to 100 users.
+
+
+Go Branch got a sponsorship from Compose.io, which helped them to pay 
+[their own channel][5]. It means, all the Remote Meetups from Go will be centralised 
+in a single channel and not the Main Channel. BTW, if you want to learn Go, 
+it's time! A lot of awesome upcoming meetups in the next weeks!
+
+
+## Helping Meetups around the World
+
+
+Another idea we got on-the-fly was helping meetups. We are partner of two 
+Meetups around the world: ParisRb - the biggest meetup in Europe. Green Ruby - 
+A cool meetup in Taipei, Taiwan! These meetups can use or channel and 
+livestream their meetups.
+
+
+## Elm Remote Meetup
+
+
+[DailyDrip][6] is [planning][7] to create a Elm Remote Meetup. We are also partner 
+with DailyDrip. They will be using our Channel and using Remote Meetup to do that!
+
+
+[1]: http://golangbridge.org
+
+[2]: https://www.bigmarker.com
+
+[3]: https://www.hired.com
+
+[4]: https://www.bigmarker.com/remote-meetup
+
+[5]: https://www.bigmarker.com/remote-meetup-go
+
+[6]: https://www.dailydrip.com/
+
+[7]: https://www.dailydrip.com/blog/organizing-a-remote-meetup-for-elm
 "
 
 done:
   title: "What we have done so far"
   links:
-    - title: ""
-      url: ""
-      comment: ""
+    
+    - title: "Rust for Rubyist"
+      url: "https://www.youtube.com/watch?v=sBkN513ShkQ"
+      comment: "by Filipe Costa"
+    
+    - title: "Building APIs on Rails 5 with AMS"
+      url: "https://www.youtube.com/watch?v=Kp5EHh-VEb0"
+      comment: "by João Moura"
+    
+    - title: "Trailblazer with Nick Sutterer"
+      url: "https://www.youtube.com/watch?v=SCzFGmM-Sto"
+      comment: "Interview with Nick Sutterer"
+
+    - title: "Introduction to phoenix channels"
+      url: "https://www.youtube.com/watch?v=fcgS9epbptY"
+      comment: "by Iuri Fernandes"
+    
+    - title: "ChatOps - When communication matters"
+      url: "https://youtu.be/idifdePbVGM"
+      comment: "by Rajat Gupta"
+    
+    - title: "An Interview with Rafael França"
+      url: "https://www.youtube.com/watch?v=2pEjxcNDsMA"
+      comment: "Rails Core Commiter"
+    
+    - title: "Introduction to Functional Reactive Programming with Elm"
+      url: "https://www.youtube.com/watch?v=bx3mOTGRvs4"
+      comment: "by Isaac Shapira"
 
 upcoming:
   title: "Upcoming Meetups"
   categories: 
     - title: Go
       links:
+    
         - title: My first App with Go 
           url: https://www.bigmarker.com/remote-meetup-go/Tutorial-My-First-App-with-Go
+    
+        - title: Shipping Go Applications with Containers 
+          url: https://www.bigmarker.com/remote-meetup-go/Shipping-Go-Applications-with-Containers
+    
+        - title: Go at Dropbox 
+          url: https://www.bigmarker.com/remote-meetup-go/Go-at-Dropbox
+    
     - title: Ruby
       links:
+    
         - title: Green Ruby Meetup 
           url: https://www.bigmarker.com/remote-meetup/Green-Ruby-Meetup-001
+    
+        - title: ParisRb - 7 June 
+          url: https://www.bigmarker.com/remote-meetup/ParisRb-June-7
+    
+        - title: An interview with Mike Perham - Sidekiq creator 
+          url: https://www.bigmarker.com/remote-meetup/An-interview-with-Mike-Perham-Sidekiq-creator
+    
     - title: Elm
       comment: "Stay tunned on #organizers-elm channel to see the latest news!"
 

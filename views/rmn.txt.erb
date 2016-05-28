@@ -6,24 +6,21 @@
 <%= @c.done.title %>
 
 <% @c.done.links.each do |t| %>
-<%= t.title %>
+<%= t.title %> - <%= t.comment %>
 <%= t.url %>
-<%= t.comment %>
 <% end %>
 ----------------------------------------------------
 <%= @c.upcoming.title %>
-<% @c.upcoming.categories.each do |cat| %>
-<%= cat.title %>
-<% if cat.comment %><%= cat.comment %><% end %>
-<% if cat.links %>
-<% cat.links.each do |t| %>
-<%= t.title %> <%= t.url %>
-<% end %>
-<% end %>
 
+<% @c.upcoming.categories.each do |cat| %><%= cat.title %>
+<% if cat.comment %>  <%= cat.comment %>
+<% end %><% if cat.links %><% cat.links.each do |t| %>
+  <%= t.title %>
+  <%= t.url %>
+<% end %><% end %>
 <% end %>
 ----------------------------------------------------
-<%= @c.outro_html %>
+<%= @c.outro_txt %>
 
 ====================================================
 EOF

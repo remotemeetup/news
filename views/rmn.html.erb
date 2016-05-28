@@ -5,21 +5,20 @@
 <meta property="og:title" content="*|MC:SUBJECT|*">
 <title>*|MC:SUBJECT|*</title>
 <style type="text/css">
-#outlook a{
-  padding:0;
-}
-body { width:100% !important; -webkit-text-size-adjust:none; margin:0; padding:0; }
+#outlook a{ padding:0; }
+body { font-family: sans serif; width:100% !important; -webkit-text-size-adjust:none; margin:0; padding:0; }
 img{ border:none; font-size:14px; font-weight:bold; height:auto; line-height:100%; outline:none; text-decoration:none; text-transform:capitalize; }
 #backgroundTable { height:100% !important; margin:0; padding:0; width:100% !important; }
 body,.backgroundTable { background-color:#fcfcfc; }
 #templateContainer { background-color:#fff; }
-#wrapper { width:600px; border:1px solid #000000; }
-h1 { color:#202020; display:block; font-size:30px; font-weight:bold; line-height:100%; margin-bottom:0px; margin-top:0; text-align: right; }
-h2 { color:#202020; display:block; font-weight:bold; line-height:100%; margin-top:6px; margin-bottom:3px; text-align:left; border-top:1px solid #000; border-bottom:1px dashed #ccc; padding:5px 0 2px 0; font-size:18px; text-transform:uppercase; }
-h3 { color:#202020; display:block; font-size:26px; font-weight:bold; line-height:100%; margin-bottom:0; text-align:left; }
+#wrapper { width:600px; text-align: left; }
+h1 { color:#202020; display:block; font-size:24px; font-weight:bold; line-height:100%; margin-bottom:0px; margin-top:0; }
+h2 { color:#202020; display:block; font-size:20px; font-weight:bold; line-height:100%; margin-top:6px; margin-bottom:3px; text-align:left; padding:5px 0 2px 0; }
+h3 { color:#202020; display:block; font-size:16px; font-weight:bold; line-height:100%; margin-bottom:0; text-align:left; }
 ul { padding-left:15px; margin:5px 0; }
-#templatePreheader { background-color:#fff; padding:10px; padding-bottom:10px; }
-#templatePreheader div { font-size:10px; line-height:100%; text-align:center; }
+
+#templatePreheader { background-color:#fff; padding:10px; padding-bottom:30px; }
+#templatePreheader div { font-size:12px; line-height:120%; text-align:center; }
 #templatePreheader div a:link,#templatePreheader div a:visited { color:#eddf26; font-weight:bold; text-decoration:none; }
 #templatePreheader div.title { font-size:14px; font-weight:bold; }
 
@@ -28,7 +27,7 @@ ul { padding-left:15px; margin:5px 0; }
 #templateHeader #headerImage { position:absolute; left:20px; top:-10px; float:left; }
 
 #templateBody { background-color:#ffffff; margin-top: -15px; padding: 10px 20px; clear:both; }
-#templateBody div, #templateBody td { color: #505050; font-family: Arial, sans serif; font-size: 14px; line-height: 150%; }
+#templateBody div, #templateBody td { color: #505050; font-size: 14px; line-height: 150%; }
 #templateBody a:link,#templateBody a:visited { color:#297b4e; font-weight:bold; text-decoration:underline; }
 #templateBody td.date { text-align: right; font-size: 12px; font-weight: bold; color: #aaa; }
 
@@ -50,7 +49,8 @@ ul { padding-left:15px; margin:5px 0; }
 #poweredby { padding:10px; }
 #poweredby a { width:300px; font-size:12px; font-family:Courier new, monospace; color:#217844; text-decoration:none; }
 #poweredby a:hover { color:#ffffff; }
-.baseline { padding-bottom: 8px; text-align: left; font-style: italic; color: #666; }
+
+.baseline { padding-bottom: 8px; text-align: left; color: #666; }
 .duration { font-size: 12px; font-weight: bold; color: #999; font-family: Courier new, monospace; }
 table.meat { width: 100%; border: 0; }
 table.meat tr:hover td { background-color: #eee; }
@@ -66,41 +66,34 @@ table.meat tr td.comment { padding-bottom: 8px; }
 </style>
 </head>
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+
 <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable">
-<tr>
-<td align="center" valign="top">
+<tr><td align="center" valign="top">
+
 <div id="wrapper">
+
 <div id="templatePreheader">
-<div><div class="title"><%= @config.title %></div>
+<div>
+<div class="title"><%= @config.title %>  #<%= @c.edition %> - <%= @c.pubdate %></div>
 <div class="view">
 <!-- *|IFNOT:ARCHIVE_PAGE|* -->
 Is this email not displaying correctly?
-<a href="<%= @config.base_url %>/<%= @c.edition %>.html" target="_blank">View it in your browser</a>.
+<a href="<%= @config.base_url %>/rmn-<%= @c.edition %>.html" target="_blank">View it in your browser</a>.
 <!-- *|END:IF|* -->
 </div>
 </div>
 </div>
+
 <div id="templateContainer">
-<div id="templateHeader">
-<div>
-<h1><%= @config.title %> #<%= @c.edition %></h1>
-<div><%= @c.pubdate %></div>
-</div>
-</div>
 <div id="templateBody">
 
 <div>
-<div class="baseline">
-<%= @c.edito_html %>
-<br>
-<br>
-</div>
+<div class="baseline"><%= @c.edito_html %></div>
 
 <hr>
 
 <h2><%= @c.done.title %></h2>
 <% @c.done.links.each do |t| %>
-<div class="baseline"><%= t.title %></div>
 <div class="link"><a href="<%= t.url %>"><%= t.title %></a></div>
 <div class="comment"><%= t.comment %></div>
 <% end %>
@@ -113,7 +106,6 @@ Is this email not displaying correctly?
 <% if cat.comment %><div><%= cat.comment %></div><% end %>
 <% if cat.links %>
 <% cat.links.each do |t| %>
-<div class="baseline"><%= t.title %></div>
 <div class="link"><a href="<%= t.url %>"><%= t.title %></a></div>
 <% end %>
 <% end %>

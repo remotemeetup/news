@@ -1,8 +1,7 @@
 <div id="templateContainer">
 <div id="templateHeader">
 
-<h1><%= @config.title %> #<%= @c.edition %></h1>
-<div><%= @c.pubdate %></div>
+<div><%= @config.title %> #<%= @c.edition %> - <%= @c.pubdate %></div>
 </div>
 </div>
 <div id="templateBody">
@@ -10,15 +9,12 @@
 <div>
 <div class="baseline">
 <%= @c.edito_html %>
-<br>
-<br>
 </div>
 
 <hr>
 
 <h2><%= @c.done.title %></h2>
 <% @c.done.links.each do |t| %>
-<div class="baseline"><%= t.title %></div>
 <div class="link"><a href="<%= t.url %>"><%= t.title %></a></div>
 <div class="comment"><%= t.comment %></div>
 <% end %>
@@ -31,7 +27,6 @@
 <% if cat.comment %><div><%= cat.comment %></div><% end %>
 <% if cat.links %>
 <% cat.links.each do |t| %>
-<div class="baseline"><%= t.title %></div>
 <div class="link"><a href="<%= t.url %>"><%= t.title %></a></div>
 <% end %>
 <% end %>
