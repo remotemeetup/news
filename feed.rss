@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>Green Ruby</title>
+    <link>http://greenruby.org/feed.rss</link>
+    <description>Green Ruby News is a feed of fresh links of the week about ruby, javascript, webdev, devops, collected by mose every sunday</description>
+    <language>en-US</language>
+    <pubDate>Sat, 28 May 2016 20:29:03 +0800</pubDate>
+    <item>
+      <title>Green Ruby News #001</title>
+      <link>http://greenruby.org/rmn-001.html</link>
+      <description>## blah </description>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0800</pubDate>
+      <guid>http://greenruby.org/rmn-001.html</guid>
+      <content:encoded>
+&lt;h1&gt;#001 - may 28th 2016&lt;/h1&gt;
+&lt;div&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+
+&lt;h2&gt;What we have done so far&lt;/h2&gt;
+
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+
+
+&lt;hr&gt;
+
+&lt;h2&gt;Upcoming Meetups&lt;/h2&gt;
+
+&lt;h3&gt;Go&lt;/h3&gt;
+
+
+
+&lt;div&gt;My first App with Go&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.bigmarker.com/remote-meetup-go/Tutorial-My-First-App-with-Go&quot;&gt;My first App with Go&lt;/a&gt;&lt;/div&gt;
+
+
+
+&lt;h3&gt;Ruby&lt;/h3&gt;
+
+
+
+&lt;div&gt;Green Ruby Meetup&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.bigmarker.com/remote-meetup/Green-Ruby-Meetup-001&quot;&gt;Green Ruby Meetup&lt;/a&gt;&lt;/div&gt;
+
+
+
+&lt;h3&gt;Elm&lt;/h3&gt;
+&lt;div&gt;Stay tunned on #organizers-elm channel to see the latest news!&lt;/div&gt;
+
+
+
+&lt;hr&gt;
+
+&lt;div class=&quot;baseline&quot;&gt;&lt;/div&gt;
+
+</content:encoded>
+      <dc:date>2016-05-28T00:00:00+08:00</dc:date>
+    </item>
+    <dc:date>2016-05-28T20:29:03+08:00</dc:date>
+  </channel>
+</rss>
