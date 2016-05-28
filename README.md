@@ -58,6 +58,21 @@ and it will regenerate the content of `site/`, plus the other failes described e
 Publication to Mailchimp
 ------------------------------
 
+The publication process follow those steps:
+
+- write the yaml file for content, verify it locally
+- generate the content locally and verify it
+- commit and push the newly generate content
+- in mailchimp, go to templates, click on 'upload your own'
+- upload `newsletter/html/RMN-001.html`
+- verify that all is good, save
+- from templates list, select 'create a new campain' form the template you just uploaded
+- fill up the meta-information (title of the campaign, subject of the mail, sending email address, etc)
+- next next next
+- at the last step, upload the `newsletter/txt/RMN-001.txt` file as a text version for the campaign
+- click send, verify your mailbox
+
+
 Web Deployment
 ---------------
 
