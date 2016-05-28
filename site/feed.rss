@@ -9,7 +9,7 @@
     <link>http://greenruby.org/feed.rss</link>
     <description>Green Ruby News is a feed of fresh links of the week about ruby, javascript, webdev, devops, collected by mose every sunday</description>
     <language>en-US</language>
-    <pubDate>Sat, 28 May 2016 20:29:03 +0800</pubDate>
+    <pubDate>Sat, 28 May 2016 20:38:11 +0800</pubDate>
     <item>
       <title>Green Ruby News #001</title>
       <link>http://greenruby.org/rmn-001.html</link>
@@ -63,6 +63,6 @@
 </content:encoded>
       <dc:date>2016-05-28T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2016-05-28T20:29:03+08:00</dc:date>
+    <dc:date>2016-05-28T20:38:11+08:00</dc:date>
   </channel>
 </rss>
