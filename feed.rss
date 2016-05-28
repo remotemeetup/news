@@ -9,11 +9,35 @@
     <link>http://greenruby.org/feed.rss</link>
     <description>Green Ruby News is a feed of fresh links of the week about ruby, javascript, webdev, devops, collected by mose every sunday</description>
     <language>en-US</language>
-    <pubDate>Sat, 28 May 2016 20:38:11 +0800</pubDate>
+    <pubDate>Sun, 29 May 2016 01:58:32 +0800</pubDate>
     <item>
       <title>Green Ruby News #001</title>
       <link>http://greenruby.org/rmn-001.html</link>
-      <description>## blah </description>
+      <description># How is it going with Remote Meetups?
+
+It's been a while that you have logged in our Slack Channel. I would like to just to say how we are going and the latest updates!
+
+Doing a Remote Meetup is a little bit difficult, because users report don't have the same feeling as a real meetup. For this reason, We were looking for some tools for helping us to do that. Here, a big thanks to Carlisia Campos and William Kennedy, [GoBridge][1] in general, people from our Go branch who have found a Nice tool: [BigMarker][2].
+
+BigMarker is a paid tool, we got a sponsorship from [Hired.com][3] which helped us to pay this Main Channel for Remote Meetup. [Channel is here!][4] Using this, the attendees interaction will be better. If you want, you can subscribe to this channel and get the latest meetups! We have a paid account up to 100 users.
+
+Go Branch got a sponsorship from Compose.io, which helped them to pay [their own channel][5]. It means, all the Remote Meetups from Go will be centralised in a single channel and not the Main Channel. BTW, if you want to learn Go, it's time! A lot of awesome upcoming meetups in the next weeks!
+
+## Helping Meetups around the World
+
+Another idea we got on-the-fly was helping meetups. We are partner of two Meetups around the world: ParisRb - the biggest meetup in Europe. Green Ruby - A cool meetup in Taipei, Taiwan! These meetups can use or channel and livestream their meetups.
+
+## Elm Remote Meetup
+
+[DailyDrip][6] is [planning][7] to create a Elm Remote Meetup. We are also partner with DailyDrip. They will be using our Channel and using Remote Meetup to do that!
+
+[1]: http://golangbridge.org
+[2]: https://www.bigmarker.com
+[3]: https://www.hired.com
+[4]: https://www.bigmarker.com/remote-meetup
+[5]: https://www.bigmarker.com/remote-meetup-go
+[6]: https://www.dailydrip.com/
+[7]: https://www.dailydrip.com/blog/organizing-a-remote-meetup-for-elm </description>
       <pubDate>Sat, 28 May 2016 00:00:00 +0800</pubDate>
       <guid>http://greenruby.org/rmn-001.html</guid>
       <content:encoded>
@@ -24,9 +48,33 @@
 
 &lt;h2&gt;What we have done so far&lt;/h2&gt;
 
-&lt;div&gt;&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/div&gt;
-&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;Rust for Rubyist&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=sBkN513ShkQ&quot;&gt;Rust for Rubyist&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;by Filipe Costa&lt;/div&gt;
+
+&lt;div&gt;Building APIs on Rails 5 with AMS&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Kp5EHh-VEb0&quot;&gt;Building APIs on Rails 5 with AMS&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;by João Moura&lt;/div&gt;
+
+&lt;div&gt;Trailblazer with Nick Sutterer&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=SCzFGmM-Sto&quot;&gt;Trailblazer with Nick Sutterer&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;Interview with Nick Sutterer&lt;/div&gt;
+
+&lt;div&gt;Introduction to phoenix channels&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=fcgS9epbptY&quot;&gt;Introduction to phoenix channels&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;by Iuri Fernandes&lt;/div&gt;
+
+&lt;div&gt;ChatOps - When communication matters&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://youtu.be/idifdePbVGM&quot;&gt;ChatOps - When communication matters&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;by Rajat Gupta&lt;/div&gt;
+
+&lt;div&gt;An Interview with Rafael França&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=2pEjxcNDsMA&quot;&gt;An Interview with Rafael França&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;Rails Core Commiter&lt;/div&gt;
+
+&lt;div&gt;Introduction to Functional Reactive Programming with Elm&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=bx3mOTGRvs4&quot;&gt;Introduction to Functional Reactive Programming with Elm&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;by Isaac Shapira&lt;/div&gt;
 
 
 &lt;hr&gt;
@@ -40,6 +88,12 @@
 &lt;div&gt;My first App with Go&lt;/div&gt;
 &lt;div&gt;&lt;a href=&quot;https://www.bigmarker.com/remote-meetup-go/Tutorial-My-First-App-with-Go&quot;&gt;My first App with Go&lt;/a&gt;&lt;/div&gt;
 
+&lt;div&gt;Shipping Go Applications with Containers&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.bigmarker.com/remote-meetup-go/Shipping-Go-Applications-with-Containers&quot;&gt;Shipping Go Applications with Containers&lt;/a&gt;&lt;/div&gt;
+
+&lt;div&gt;Go at Dropbox&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.bigmarker.com/remote-meetup-go/Go-at-Dropbox&quot;&gt;Go at Dropbox&lt;/a&gt;&lt;/div&gt;
+
 
 
 &lt;h3&gt;Ruby&lt;/h3&gt;
@@ -48,6 +102,12 @@
 
 &lt;div&gt;Green Ruby Meetup&lt;/div&gt;
 &lt;div&gt;&lt;a href=&quot;https://www.bigmarker.com/remote-meetup/Green-Ruby-Meetup-001&quot;&gt;Green Ruby Meetup&lt;/a&gt;&lt;/div&gt;
+
+&lt;div&gt;ParisRb - 7 June&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.bigmarker.com/remote-meetup/ParisRb-June-7&quot;&gt;ParisRb - 7 June&lt;/a&gt;&lt;/div&gt;
+
+&lt;div&gt;An interview with Mike Perham - Sidekiq creator&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.bigmarker.com/remote-meetup/An-interview-with-Mike-Perham-Sidekiq-creator&quot;&gt;An interview with Mike Perham - Sidekiq creator&lt;/a&gt;&lt;/div&gt;
 
 
 
@@ -63,6 +123,6 @@
 </content:encoded>
       <dc:date>2016-05-28T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2016-05-28T20:38:11+08:00</dc:date>
+    <dc:date>2016-05-29T01:58:32+08:00</dc:date>
   </channel>
 </rss>
