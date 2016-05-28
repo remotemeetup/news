@@ -70,10 +70,10 @@ module Greeby
       template = File.read(File.join(@views_path, 'static.haml'))
       haml_engine = Haml::Engine.new(template)
       page = OpenStruct.new
-      page.letters = letters
       page.name = @c.edition
       page.content = File.read(File.join(@news_path, 'partials', "RMN-#{@c.edition}.html"))
       page.letters = Hash[letters.sort_by { |edition,data| -edition.to_i }]
+      page.config = @config
       html = haml_engine.render(page)
       File.open(File.join(@static_path, "rmn-#{page.name}.html"),'w') do |f|
         f.puts html
@@ -119,7 +119,7 @@ module Greeby
         maker.channel.language = "en-US"
 
         letters = JSON.parse(File.read(File.join(@static_path, 'editions.json')))
-        partial = ERB.new(File.read(File.join(@news_path, 'rmn.rss.erb')))
+        partial = ERB.new(File.read(File.join(@views_path, 'rmn.rss.erb')))
         tenletters = Hash[letters.to_a.reverse[0..9]]
         tenletters.each do |letter,c|
           maker.items.new_item do |item|
