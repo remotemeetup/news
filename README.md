@@ -9,6 +9,7 @@ The templates
 Templates are located in `views/`. There are 2 main destinations for the templates, the ones intended to be uploaded to mailchimp, and the one used to produce the website.
 
 | template        | description |
+|-----------------|-------------|
 | rmn.html.erb    | it's the template of the newsletter as it is supposed to be sent via mailchimp. It follows some constraints related to the mailchimp publication system, like the inline css, usage of tables, and such crazy things. |
 | rmn.rss.erb     | used to generate the rss file `/feed.rss` |
 | rmn.txt.erb     | the txt version of the mailchimp template. html to txt feature in mailchimp is not really reliable, so we generate our txt by ourselves |
@@ -54,8 +55,10 @@ and it will regenerate the content of `site/`, plus the other failes described e
     rake generate:rss     # make rss feed
     rake generate:web     # updates static website
 
+Publication to Mailchimp
+------------------------------
 
-Deployment
+Web Deployment
 ---------------
 
 The `rake deploy` command will take the current version of the `site/` directory to push it in the `gh-pages` branch. Note that the changes in `sites/` have to be committed and push for them to be taken in account.
