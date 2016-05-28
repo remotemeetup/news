@@ -9,7 +9,7 @@
     <link>http://greenruby.org/feed.rss</link>
     <description>Green Ruby News is a feed of fresh links of the week about ruby, javascript, webdev, devops, collected by mose every sunday</description>
     <language>en-US</language>
-    <pubDate>Sun, 29 May 2016 01:58:32 +0800</pubDate>
+    <pubDate>Sun, 29 May 2016 02:01:17 +0800</pubDate>
     <item>
       <title>Green Ruby News #001</title>
       <link>http://greenruby.org/rmn-001.html</link>
@@ -123,6 +123,6 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 </content:encoded>
       <dc:date>2016-05-28T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2016-05-29T01:58:32+08:00</dc:date>
+    <dc:date>2016-05-29T02:01:17+08:00</dc:date>
   </channel>
 </rss>
