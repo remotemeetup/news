@@ -5,8 +5,8 @@ namespace :generate do
   desc "generate a new letter html file"
   task :letter do
     builder = Greeby::Builder.new
-    builder.make_letter('grn.yml')
-    builder.make_archives('grn.yml')
+    builder.make_letter('rmn.yml')
+    builder.make_archives('rmn.yml')
     builder.make_web
     builder.make_rss
   end

@@ -4,7 +4,7 @@ require 'fileutils'
 require 'rdiscount'
 require 'haml'
 require 'json'
-require 'awesome_print'
+# require 'awesome_print'
 
 module Greeby
 
@@ -28,45 +28,42 @@ module Greeby
     def make_letter(source)
 
       @c = to_ostruct(YAML::load_file(File.join(@news_path, source)))
-      if @c.rant.class == String
-        @c.rant_html = RDiscount.new(@c.rant.to_s).to_html
-        @c.rant_txt = wrap(@c.rant)
-      elsif @c.rant
-        @c.rant_html = RDiscount.new(@c.rant.content.to_s).to_html
-        @c.rant_txt = wrap(@c.rant.content)
-      end
+      @c.edito_html = RDiscount.new(@c.edito.to_s).to_html
+      @c.edito_txt = wrap(@c.edito)
+      @c.outro_html = RDiscount.new(@c.outro.content.to_s).to_html
+      @c.outro_txt = wrap(@c.outro.content)
+      @c.signature_html = RDiscount.new(@c.signature.to_s).to_html
+      @c.signature_txt = wrap(@c.signature)
 
-      erb = ERB.new(File.read(File.join(@news_path, 'grn.html.erb')), 0, '<>')
-      File.open(File.join(@news_path, 'html', "GRN-#{@c.edition}.html"), 'w') do |f|
+      erb = ERB.new(File.read(File.join(@views_path, 'rmn.html.erb')), 0, '<>')
+      File.open(File.join(@news_path, 'html', "RMN-#{@c.edition}.html"), 'w') do |f|
         f.puts erb.result(binding)
       end
-      txt = ERB.new(File.read(File.join(@news_path, 'grn.txt.erb')))
-      File.open(File.join(@news_path, 'txt', "GRN-#{@c.edition}.txt"), 'w') do |f|
+      txt = ERB.new(File.read(File.join(@views_path, 'rmn.txt.erb')))
+      File.open(File.join(@news_path, 'txt', "RMN-#{@c.edition}.txt"), 'w') do |f|
         f.puts txt.result(binding)
       end
       FileUtils.cp(
-        File.join(@news_path, 'grn.yml'),
-        File.join(@news_path, 'archives', "grn-#{@c.edition}.yml")
+        File.join(@news_path, 'rmn.yml'),
+        File.join(@news_path, 'archives', "rmn-#{@c.edition}.yml")
       )
     end
 
     def make_archives(source)
 
       @c = to_ostruct(YAML::load_file(File.join(@news_path, source)))
-      if @c.rant.class == String
-        @c.rant_html = RDiscount.new(@c.rant.to_s).to_html
-      elsif @c.rant
-        @c.rant_html = RDiscount.new(@c.rant.content.to_s).to_html
-      end
+      @c.edito_html = RDiscount.new(@c.edito.to_s).to_html
+      @c.outro_html = RDiscount.new(@c.outro.content.to_s).to_html
+      @c.signature_html = RDiscount.new(@c.signature.to_s).to_html
 
       letters = JSON.parse(File.read(File.join(@static_path, 'editions.json')))
-      letters[@c.edition] = { "link" => "grn-#{@c.edition}.html", "date" => @c.pubdate }
+      letters[@c.edition] = { "link" => "rmn-#{@c.edition}.html", "date" => @c.pubdate }
       File.open(File.join(@static_path, 'editions.json'),'w') do |f|
         f.puts letters.to_json
       end
 
-      partial = ERB.new(File.read(File.join(@news_path, 'grn-partial.erb')))
-      File.open(File.join(@news_path, 'partials', "GRN-#{@c.edition}.html"), 'w') do |f|
+      partial = ERB.new(File.read(File.join(@views_path, "template-#{@c.template}.erb")))
+      File.open(File.join(@news_path, 'partials', "RMN-#{@c.edition}.html"), 'w') do |f|
         f.puts partial.result(binding)
       end
 
@@ -75,10 +72,10 @@ module Greeby
       page = OpenStruct.new
       page.letters = letters
       page.name = @c.edition
-      page.content = File.read(File.join(@news_path, 'partials', "GRN-#{@c.edition}.html"))
+      page.content = File.read(File.join(@news_path, 'partials', "RMN-#{@c.edition}.html"))
       page.letters = Hash[letters.sort_by { |edition,data| -edition.to_i }]
       html = haml_engine.render(page)
-      File.open(File.join(@static_path, "grn-#{page.name}.html"),'w') do |f|
+      File.open(File.join(@static_path, "rmn-#{page.name}.html"),'w') do |f|
         f.puts html
       end
       File.open(File.join(@static_path, 'index.html'),'w') do |f|
@@ -89,7 +86,7 @@ module Greeby
     def make_all
       letters = JSON.parse(File.read(File.join(@static_path, 'editions.json')))
       letters.each do |letter,c|
-        make_archives("archives/grn-#{letter}.yml")
+        make_archives("archives/rmn-#{letter}.yml")
       end
     end
 
@@ -122,7 +119,7 @@ module Greeby
         maker.channel.language = "en-US"
 
         letters = JSON.parse(File.read(File.join(@static_path, 'editions.json')))
-        partial = ERB.new(File.read(File.join(@news_path, 'grn-rss.erb')))
+        partial = ERB.new(File.read(File.join(@news_path, 'rmn.rss.erb')))
         tenletters = Hash[letters.to_a.reverse[0..9]]
         tenletters.each do |letter,c|
           maker.items.new_item do |item|
@@ -130,7 +127,7 @@ module Greeby
             item.guid.content = "http://greenruby.org/#{c['link']}"
             item.title = "Green Ruby News ##{letter}"
             item.updated = c['date']
-            @c = to_ostruct(YAML::load_file(File.join(@news_path, "archives/grn-#{letter}.yml")))
+            @c = to_ostruct(YAML::load_file(File.join(@news_path, "archives/rmn-#{letter}.yml")))
             item.description = @c.edito
             item.content_encoded = partial.result(binding)
           end
@@ -141,117 +138,6 @@ module Greeby
       end
     end
 
-    def make_json(edition = nil)
-      issues = File.join(@json_path, "issues.json")
-      stories = File.join(@json_path, "stories.json")
-      issues_data = []
-      stories_data = []
-      letters = JSON.parse(File.read(File.join(@static_path, 'editions.json')))
-      letters.each do |letter,c|
-        data = to_ostruct(YAML::load_file(File.join(@news_path, "archives/grn-#{letter}.yml")))
-        issues_data << {
-          "id" => data.edition.to_i,
-          "date" => data.pubdate,
-          "edito" => data.edito,
-          "contributors" => data.contibutors
-        }
-        data.topics.each do |topic|
-          topic.links.each do |story|
-            stories_data << {
-              "issue" => data.edition.to_i,
-              "title" => story.title,
-              "link" => story.url,
-              "description" => story.comment,
-              "category" => topic.title,
-              "subject" => story.tags,
-              "date" => story.pubdate,
-              "quantity" => story.duration
-            }
-          end
-        end
-      end
-      File.open(issues,'w') do |f|
-        f.puts issues_data.to_json
-      end
-      File.open(stories,'w') do |f|
-        f.puts stories_data.to_json
-      end
-    end
-
-
-    def make_json_small(edition = nil)
-      issues = File.join(@json_path, "issues_small.json")
-      stories = File.join(@json_path, "stories_small.json")
-      issues_data = []
-      stories_data = []
-      letters = JSON.parse(File.read(File.join(@static_path, 'editions.json')))
-      letters.each do |letter,c|
-        data = to_ostruct(YAML::load_file(File.join(@news_path, "archives/grn-#{letter}.yml")))
-        issues_data << {
-          "i" => data.edition.to_i,
-          "d" => data.pubdate,
-          "e" => data.edito,
-          "c" => data.contibutors
-        }
-        data.topics.each do |topic|
-          topic.links.each do |story|
-            stories_data << {
-              "i" => data.edition.to_i,
-              "t" => story.title,
-              "l" => story.url,
-              "d" => story.comment,
-              "c" => topic.title,
-              "s" => story.tags,
-              "p" => story.pubdate,
-              "q" => story.duration
-            }
-          end
-        end
-      end
-      File.open(issues,'w') do |f|
-        f.puts issues_data.to_json
-      end
-      File.open(stories,'w') do |f|
-        f.puts stories_data.to_json
-      end
-    end
-
-    def make_json_array
-      issues = File.join(@json_path, "issues_array.json")
-      stories = File.join(@json_path, "stories_array.json")
-      issues_data = []
-      stories_data = []
-      letters = JSON.parse(File.read(File.join(@static_path, 'editions.json')))
-      letters.each do |letter,c|
-        data = to_ostruct(YAML::load_file(File.join(@news_path, "archives/grn-#{letter}.yml")))
-        issues_data << [
-          data.edition.to_i,
-          data.pubdate,
-          data.edito,
-          data.contibutors
-        ]
-        data.topics.each do |topic|
-          topic.links.each do |story|
-            stories_data << [
-              data.edition.to_i,
-              story.title,
-              story.url,
-              story.comment,
-              topic.title,
-              story.tags,
-              story.pubdate,
-              story.duration
-            ]
-          end
-        end
-      end
-      File.open(issues,'w') do |f|
-        f.puts issues_data.to_json
-      end
-      File.open(stories,'w') do |f|
-        f.puts stories_data.to_json
-      end
-    end
     private
 
     def to_ostruct(obj)
