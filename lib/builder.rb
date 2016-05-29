@@ -113,9 +113,9 @@ module Greeby
       rss = RSS::Maker.make("2.0") do |maker|
         maker.channel.author = "mose"
         maker.channel.updated = Time.now.to_s
-        maker.channel.description = "Green Ruby News is a feed of fresh links of the week about ruby, javascript, webdev, devops, collected by mose every sunday"
-        maker.channel.title = "Green Ruby"
-        maker.channel.link = "http://greenruby.org/feed.rss"
+        maker.channel.description = @config.description
+        maker.channel.title = @config.title
+        maker.channel.link = "#{@config.base_url}/feed.rss"
         maker.channel.language = "en-US"
 
         letters = JSON.parse(File.read(File.join(@static_path, 'editions.json')))

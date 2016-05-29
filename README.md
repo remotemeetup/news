@@ -19,7 +19,11 @@ Templates are located in `views/`. There are 2 main destinations for the templat
 The content
 ---------------
 
-There is 2 type of content:
+There is 3 type of content:
+
+### the config file
+
+There is a config.yml holding a certain amount of data that is going to be used in all the templates.
 
 ### The static pages
 
