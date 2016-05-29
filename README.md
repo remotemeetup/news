@@ -39,6 +39,8 @@ The newsletter is redacted in `yaml` format in `newsletters/rmn.yml`. This file 
 - `partials/RMN-<number>.html` is used to generate the website equivalent of the newsletter
 - `txt/RMN-001.txt` is the generate text version of the nezsletter, to be uploaded to mailchimp
 
+Note, there are blocs of markdown embedded in the yaml file. For some mysterious reason it nmeeds to have double-linefeeds to work properly. If someone finds a fix, welcome to PR it!
+
 The building commands
 ------------------------
 
