@@ -114,7 +114,12 @@ Is this email not displaying correctly?
 <hr>
 
 <div class="baseline"><%= @c.outro_html %></div>
+<h2><%= @c.outro.links_title %></h2>
+<% @c.outro.links.each do |t| %>
+<div class="link"><a href="<%= t.url %>"><%= t.title %></a></div>
+<% end %>
 
+<div class="baseline"><%= @c.signature_html %></div>
 
 <hr>
 <div class="baseline">

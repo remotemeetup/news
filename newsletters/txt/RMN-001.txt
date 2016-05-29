@@ -101,11 +101,33 @@ Elm
 We are really happy with those news! Hope you are also too! We still need help
 for organising the last meetups. If you want to help, join our slack and use
 the channel #organizers!
+
 To complete, I would like to say a big thanks for everyone, specially: Iuri
 Fernandes, Carlisia Campos, William Kennedy, Filipe Costa, Narayan Chowdhury,
 Tad Hosford, Sebastian Sogamoso, Mose, João Moura, Lucas Amaral, André Mota
 and all the persons for our Slack channel!
+<div class="baseline"><p>We are really happy with those news! Hope you are also too! We still need help for organising the last meetups. If you want to help, join our slack and use the channel #organizers!</p>
 
+<p>To complete, I would like to say a big thanks for everyone, specially: Iuri Fernandes, Carlisia Campos, William Kennedy, Filipe Costa, Narayan Chowdhury, Tad Hosford, Sebastian Sogamoso, Mose, João Moura, Lucas Amaral, André Mota and all the persons for our Slack channel!</p>
+</div>
+
+Latest from our blog
+
+  Why We need Remote Meetup
+  https://medium.com/remote-meetup/why-we-need-remote-meetups-45f835658876#.90ucn2t6q
+
+  Launching RemoteMeetup.com
+  https://medium.com/remote-meetup/remotemeetup-com-27889b2510e7#.n6jsuzh6k
+
+  Go Remote Meetup — Thanks, GoBridge!
+  https://medium.com/remote-meetup/go-remote-meetup-thanks-gobridge-22aa4f22d7a2#.mjn3bwq1t
+
+  Scaling RemoteMeetup — Thanks, Hired.com!
+  https://medium.com/remote-meetup/scaling-remotemeetup-thanks-hired-com-b46ded1a2306#.m8q6nddhr
+
+
+Franzé Jr.
+Founder of Remote Meetup
 ====================================================
 EOF
 

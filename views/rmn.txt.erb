@@ -21,7 +21,15 @@
 <% end %>
 ----------------------------------------------------
 <%= @c.outro_txt %>
+<div class="baseline"><%= @c.outro_html %></div>
 
+<%= @c.outro.links_title %>
+<% @c.outro.links.each do |t| %>
+  <%= t.title %>
+  <%= t.url %>
+<% end %>
+
+<%= @c.signature_txt %>
 ====================================================
 EOF
 
