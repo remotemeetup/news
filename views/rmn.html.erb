@@ -24,7 +24,7 @@ a { color: #369; }
 #templatePreheader div a:link,#templatePreheader div a:visited { color:#69a; font-weight:bold; text-decoration:none; }
 #templatePreheader div.title { font-size:14px; font-weight:bold; }
 
-#templateHeader { background-color:#ffffff; color:#113331; font-size:14px; line-height:100%; padding:5px 20px 15px; position:relative; }
+#templateHeader { background-color:#ffffff; color:#113331; font-size:14px; line-height:100%; padding: 5px 20px 15px; position:relative; }
 #templateHeader div {}
 #templateHeader #headerImage { position:absolute; left:20px; top:-10px; float:left; }
 
@@ -33,7 +33,7 @@ a { color: #369; }
 #templateBody a:link,#templateBody a:visited { color:#69a; font-weight:bold; text-decoration:underline; }
 #templateBody td.date { text-align: right; font-size: 12px; font-weight: bold; color: #aaa; }
 
-#templateFooter { font-family:Arial, sans serif; font-size:12px; line-height:125%; text-align:left; }
+#templateFooter { font-family:Arial, sans serif; font-size:12px; line-height:125%; text-align:left; padding: 0 10px;}
 #templateFooter ul { list-style:none; margin:0; padding:0; }
 #templateFooter a:link,#templateFooter a:visited { text-decoration:none; }
 #templateFooter img { display:inline; }
@@ -45,9 +45,9 @@ a { color: #369; }
 #address { float:left; width:50%; }
 #address .add { padding:10px; }
 #address a:link,#address a:visited { color:#f2eb17; text-decoration:none; }
-#copyright { text-align:center; padding:5px; font-size:10px; color:#297b4e; font-family:Courier new, monospace; background-color:#113025; clear:both; }
-#copyright a { color:#217844; text-decoration:none; }
-#copyright a:hover { color:#ffffff; }
+
+#copyright { text-align:center; padding:5px; font-size:10px; clear:both; }
+
 #poweredby { padding:10px; }
 #poweredby a { width:300px; font-size:12px; font-family:Courier new, monospace; color:#217844; text-decoration:none; }
 #poweredby a:hover { color:#ffffff; }
@@ -124,10 +124,7 @@ Is this email not displaying correctly?
 <div class="baseline"><%= @c.signature_html %></div>
 
 <hr>
-<div class="baseline">
-EOF<br><br>
-<em>Feel free to send us feedback or information at <a href="mailto:news@greenruby.org" target="_self">news@greenruby.org</a></em>
-</div>
+
 </div>
 </div>
 
@@ -136,7 +133,9 @@ EOF<br><br>
     <div id="social">
       <div mc:edit="std_social">
         <ul>
-          <li><a href="http://twitter.com/greenrubist">follow on Twitter</a></li>
+          <% config.social.each do |s| %>
+            <li class="<%= s['title'].downcase %>"><a href="<%= s['url'] %>">follow on <%= s['title'] %></a></li>
+          <% end %>
           <li><a href="*|FORWARD|*">forward to a friend</a></li>
         </ul>
       </div>
@@ -176,14 +175,15 @@ EOF<br><br>
   </div>
 </div>
 
+
 <div id="copyright">
-  Copyright &copy; *|CURRENT_YEAR|* Mose<br>
+  <hr>
+  Copyright &copy; *|CURRENT_YEAR|* <%= @config.copyright %>
   <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
     <img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png">
   </a>
   <br>
   This publication is licensed under a
-  <br>
   <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
     Creative Commons Attribution-ShareAlike 3.0 License
   </a>.
