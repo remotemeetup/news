@@ -123,9 +123,9 @@ module Greeby
         tenletters = Hash[letters.to_a.reverse[0..9]]
         tenletters.each do |letter,c|
           maker.items.new_item do |item|
-            item.link = "http://greenruby.org/#{c['link']}"
-            item.guid.content = "http://greenruby.org/#{c['link']}"
-            item.title = "Green Ruby News ##{letter}"
+            item.link = "#{@config.base_url}/#{c['link']}"
+            item.guid.content = "#{@config.base_url}/#{c['link']}"
+            item.title = "#{@config.title} ##{letter}"
             item.updated = c['date']
             @c = to_ostruct(YAML::load_file(File.join(@news_path, "archives/rmn-#{letter}.yml")))
             item.description = @c.edito
