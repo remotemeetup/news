@@ -1,7 +1,7 @@
 Remote Meetups News Platform
 ===================================
 
-This news platform is copied from the Green Ruby toolset, with some adaptations.
+This news platform is copied from the [Green Ruby toolset](https://github.com/greenruby/grn-static), with some adaptations and imprvements.
 
 The templates
 ----------------
@@ -90,3 +90,12 @@ Help!
 -----------------
 
 If you need any guidance in the publication process, feel free to ask Franzé or mose on slack.
+
+
+License
+------------
+
+The code (in `lib/`) is Copyright (c) mose - available under MIT license
+
+The content (all the rest, markdown, yaml, css) is published under [Creative commons CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) by the [Remote Meetup Team](https://github.com/orgs/remotemeetup/people).
+
