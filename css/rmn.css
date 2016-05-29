@@ -42,11 +42,8 @@ h1, h2, h3, h4 {
 }
 h3.sub-header {
   padding-bottom: 10px;
-  border-bottom: 1px solid #aaaaaa;
 }
-h4 {
-  margin-top: 20px;
-}
+
 
 .pubdate {
   float: right;

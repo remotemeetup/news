@@ -9,7 +9,7 @@
     <link>http://greenruby.org/feed.rss</link>
     <description>Green Ruby News is a feed of fresh links of the week about ruby, javascript, webdev, devops, collected by mose every sunday</description>
     <language>en-US</language>
-    <pubDate>Sun, 29 May 2016 02:01:17 +0800</pubDate>
+    <pubDate>Sun, 29 May 2016 08:49:10 +0800</pubDate>
     <item>
       <title>Green Ruby News #001</title>
       <link>http://greenruby.org/rmn-001.html</link>
@@ -119,10 +119,21 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 &lt;hr&gt;
 
 &lt;div class=&quot;baseline&quot;&gt;&lt;/div&gt;
+&lt;h2&gt;Latest from our blog&lt;/h2&gt;
 
+&lt;div class=&quot;link&quot;&gt;&lt;a href=&quot;https://medium.com/remote-meetup/why-we-need-remote-meetups-45f835658876#.90ucn2t6q&quot;&gt;Why We need Remote Meetup&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class=&quot;link&quot;&gt;&lt;a href=&quot;https://medium.com/remote-meetup/remotemeetup-com-27889b2510e7#.n6jsuzh6k&quot;&gt;Launching RemoteMeetup.com&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class=&quot;link&quot;&gt;&lt;a href=&quot;https://medium.com/remote-meetup/go-remote-meetup-thanks-gobridge-22aa4f22d7a2#.mjn3bwq1t&quot;&gt;Go Remote Meetup — Thanks, GoBridge!&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class=&quot;link&quot;&gt;&lt;a href=&quot;https://medium.com/remote-meetup/scaling-remotemeetup-thanks-hired-com-b46ded1a2306#.m8q6nddhr&quot;&gt;Scaling RemoteMeetup — Thanks, Hired.com!&lt;/a&gt;&lt;/div&gt;
+
+
+&lt;div class=&quot;baseline&quot;&gt;&lt;/div&gt;
 </content:encoded>
       <dc:date>2016-05-28T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2016-05-29T02:01:17+08:00</dc:date>
+    <dc:date>2016-05-29T08:49:10+08:00</dc:date>
   </channel>
 </rss>
