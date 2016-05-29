@@ -34,7 +34,7 @@ Like the `about` page or whatever other page. The buikld script will take all th
 
 The newsletter is redacted in `yaml` format in `newsletters/rmn.yml`. This file will always be the 'current' working version, unpublished yet. When the `rake generate` task is executed, it will take that yaml file, and create various files:
 
-- `archives/r,m-<number>.yml` which is the archive of that yaml file for later regeneration if needed.
+- `archives/rmn-<number>.yml` which is the archive of that yaml file for later regeneration if needed.
 - `html/RMN-<number>.html` is supposed to be uploaded as main html template to mailchimp
 - `partials/RMN-<number>.html` is used to generate the website equivalent of the newsletter
 - `txt/RMN-001.txt` is the generate text version of the nezsletter, to be uploaded to mailchimp
