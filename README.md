@@ -46,7 +46,7 @@ Now you can
 
     rake
 
-and it will regenerate the content of `site/`, plus the other failes described earlier. The default `rake` command (with no argument) will execute the `generate` command/task.
+and it will regenerate the content of `site/`, plus the other failes described earlier. The default `rake` command (with no argument) will execute the `generate:full` command/task.
 
     rake deploy           # deploy to gh-pages
     rake generate:all     # re-generate all letters html file
