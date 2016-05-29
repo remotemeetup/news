@@ -127,6 +127,7 @@ Latest from our blog
 
 
 Franzé Jr.
+
 Founder of Remote Meetup
 ====================================================
 EOF
