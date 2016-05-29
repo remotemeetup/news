@@ -69,7 +69,7 @@ The publication process follow those steps:
 - write the yaml file for content, verify it locally
 - generate the content locally and verify it
 - commit and push the newly generate content
-- in mailchimp, go to templates, click on 'upload your own'
+- in mailchimp, go to 'create templates', click on 'import HTML'
 - upload `newsletter/html/RMN-001.html`
 - verify that all is good, save
 - from templates list, select 'create a new campaign' form the template you just uploaded
