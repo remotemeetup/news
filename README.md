@@ -1,7 +1,7 @@
 Remote Meetups News Platform
 ===================================
 
-This news platform is copied from the [Green Ruby toolset](https://github.com/greenruby/grn-static), with some adaptations and imprvements.
+This news platform is copied from the [Green Ruby toolset](https://github.com/greenruby/grn-static), with some adaptations and improvements.
 
 The templates
 ----------------
@@ -27,7 +27,7 @@ There is a config.yml holding a certain amount of data that is going to be used 
 
 ### The static pages
 
-Like the `about` page or whatever other page. The buikld script will take all the markdown files present in that directory and create a `.html` page accordingly in `site/`. The a link to those pages can be added in the main navigation in /views/static.haml`.
+Like the `about` page or whatever other page. The build script will take all the markdown files present in that directory and create a `.html` page accordingly in `site/`. The a link to those pages can be added in the main navigation in /views/static.haml`.
 
 
 ### The newsletters
@@ -39,7 +39,7 @@ The newsletter is redacted in `yaml` format in `newsletters/rmn.yml`. This file 
 - `partials/RMN-<number>.html` is used to generate the website equivalent of the newsletter
 - `txt/RMN-001.txt` is the generate text version of the nezsletter, to be uploaded to mailchimp
 
-Note, there are blocs of markdown embedded in the yaml file. For some mysterious reason it nmeeds to have double-linefeeds to work properly. If someone finds a fix, welcome to PR it!
+Note, there are blocs of markdown embedded in the yaml file. For some mysterious reason it needs to have double-linefeeds to work properly. If someone finds a fix, welcome to PR it!
 
 The building commands
 ------------------------
@@ -52,7 +52,7 @@ Now you can
 
     rake
 
-and it will regenerate the content of `site/`, plus the other failes described earlier. The default `rake` command (with no argument) will execute the `generate:full` command/task.
+and it will regenerate the content of `site/`, plus the other files described earlier. The default `rake` command (with no argument) will execute the `generate:full` command/task.
 
     rake deploy           # deploy to gh-pages
     rake generate:all     # re-generate all letters html file
@@ -72,7 +72,7 @@ The publication process follow those steps:
 - in mailchimp, go to templates, click on 'upload your own'
 - upload `newsletter/html/RMN-001.html`
 - verify that all is good, save
-- from templates list, select 'create a new campain' form the template you just uploaded
+- from templates list, select 'create a new campaign' form the template you just uploaded
 - fill up the meta-information (title of the campaign, subject of the mail, sending email address, etc)
 - next next next
 - at the last step, upload the `newsletter/txt/RMN-001.txt` file as a text version for the campaign
