@@ -9,7 +9,7 @@
     <link>http://news.remotemeetup.com/feed.rss</link>
     <description>All the news about Remote Meetups, the incoming events, the life of the community, the news from the front.</description>
     <language>en-US</language>
-    <pubDate>Sun, 29 May 2016 16:17:57 +0800</pubDate>
+    <pubDate>Mon, 06 Jun 2016 07:49:54 +0800</pubDate>
     <item>
       <title>Remote Meetup News #001</title>
       <link>http://news.remotemeetup.com/rmn-001.html</link>
@@ -134,6 +134,6 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 </content:encoded>
       <dc:date>2016-05-28T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2016-05-29T16:17:57+08:00</dc:date>
+    <dc:date>2016-06-06T07:49:54+08:00</dc:date>
   </channel>
 </rss>
