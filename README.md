@@ -41,6 +41,18 @@ The newsletter is redacted in `yaml` format in `newsletters/rmn.yml`. This file 
 
 Note, there are blocs of markdown embedded in the yaml file. For some mysterious reason it needs to have double-linefeeds to work properly. If someone finds a fix, welcome to PR it!
 
+
+The workflow
+------------------------
+
+In `newsletters/` we keep actually 3 version of the content:
+
+- rmn.yml is the one taken when we generate the site, it's the current production version
+
+- rmn-next.yml is the next version, on which you can work and only copy inside rmn.yml whan it's totally ready. It can happen that you have to fix a typo on the live current version while preparing the next version at the same time.
+
+- rmn-blank.yml is just an empty template for when you copy the next to the current, it will refresh the next.
+
 The building commands
 ------------------------
 
