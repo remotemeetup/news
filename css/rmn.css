@@ -7,7 +7,7 @@ body {
   color: #555555;
 }
 .topnav {
-  background-color: #fff;
+  background-color: #e1e1e1;
   border-bottom: 1px solid #559955;
 }
 .navbar-default {
@@ -20,17 +20,17 @@ body {
   color: #963;
 }
 .logoized {
-  padding-left: 60px;
+  padding-left: 193px;
   position: relative;
   height: 58px;
-  background: transparent url("../img/green-ruby-48.png") no-repeat 8px 12px;
+  background: transparent url("../img/rmn-58.png") no-repeat -5px 0;
   font-size: 36px;
   font-weight: 700;
   font-family: "inder", monospace;
-  color: #369;
+  color: #0d83c8;
 }
 .logoized a {
-  color: #369;
+  color: #0d83c8;
 }
 .logoized a:hover {
   color: #000;
@@ -44,10 +44,10 @@ h3.sub-header {
   padding-bottom: 10px;
 }
 a {
-  color: #69a;
+  color: #0d83c8;
 }
 a:hover {
-  color: #963;
+  color: #39e;
 }
 
 .pubdate {
