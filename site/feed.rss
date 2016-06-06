@@ -9,7 +9,7 @@
     <link>http://news.remotemeetup.com/feed.rss</link>
     <description>All the news about Remote Meetups, the incoming events, the life of the community, the news from the front.</description>
     <language>en-US</language>
-    <pubDate>Sun, 05 Jun 2016 21:48:16 -0300</pubDate>
+    <pubDate>Mon, 06 Jun 2016 09:06:12 +0800</pubDate>
     <item>
       <title>Remote Meetup News #001</title>
       <link>http://news.remotemeetup.com/rmn-001.html</link>
@@ -38,7 +38,7 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 [5]: https://www.bigmarker.com/remote-meetup-go
 [6]: https://www.dailydrip.com/
 [7]: https://www.dailydrip.com/blog/organizing-a-remote-meetup-for-elm </description>
-      <pubDate>Sun, 05 Jun 2016 00:00:00 -0300</pubDate>
+      <pubDate>Sun, 05 Jun 2016 00:00:00 +0800</pubDate>
       <guid>http://news.remotemeetup.com/rmn-001.html</guid>
       <content:encoded>
 &lt;h1&gt;#001 - june 05 2016&lt;/h1&gt;
@@ -143,8 +143,8 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 
 &lt;div class=&quot;baseline&quot;&gt;&lt;/div&gt;
 </content:encoded>
-      <dc:date>2016-06-05T00:00:00-03:00</dc:date>
+      <dc:date>2016-06-05T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2016-06-05T21:48:16-03:00</dc:date>
+    <dc:date>2016-06-06T09:06:12+08:00</dc:date>
   </channel>
 </rss>
