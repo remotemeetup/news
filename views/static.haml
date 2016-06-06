@@ -78,7 +78,7 @@
         .col-sm-12.col-md-3.rightbar.hidden-print
           %p.header Remote Meetups, screencasts, Interviews, Lightning talks. Remote.
           %p
-          %form{ action: "http://greenruby.us6.list-manage.com/subscribe/post?u=#{config.mailchim_token}&amp;id=#{config.mailchim_id}", method: 'post'}
+          %form{ action: config.mailchimp_subscribe, method: 'post'}
             .text-center
               %b Subscribe
             .text-center

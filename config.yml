@@ -5,8 +5,7 @@ keywords: meetup, remote, community, collaboration, geeks, webdev, techies
 contact_email: info@remotemeetup.com
 base_url: http://news.remotemeetup.com
 copyright: the RM team
-mailchimp_id: xxxxx
-mailchimp_token: xxxxx
+mailchimp_subscribe: xxxxx
 social:
   - title: Youtube
     url: https://www.youtube.com/channel/UCLa6UKKHaHE0PCqA73m8Irw
