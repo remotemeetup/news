@@ -121,6 +121,9 @@ ul.letters li a span.date {
 
 }
 
+#templateHeader {
+  color: #999;
+}
 #footer {
   position: relative;
   padding: 5px 20px;
