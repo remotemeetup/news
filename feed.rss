@@ -9,7 +9,7 @@
     <link>http://news.remotemeetup.com/feed.rss</link>
     <description>All the news about Remote Meetups, the incoming events, the life of the community, the news from the front.</description>
     <language>en-US</language>
-    <pubDate>Mon, 06 Jun 2016 07:49:54 +0800</pubDate>
+    <pubDate>Sun, 05 Jun 2016 21:48:16 -0300</pubDate>
     <item>
       <title>Remote Meetup News #001</title>
       <link>http://news.remotemeetup.com/rmn-001.html</link>
@@ -33,15 +33,15 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 
 [1]: http://golangbridge.org
 [2]: https://www.bigmarker.com
-[3]: https://www.hired.com
+[3]: https://hired.com/?utm_source=sponsor&amp;utm_medium=remotemeetup&amp;utm_campaign=q2-16
 [4]: https://www.bigmarker.com/remote-meetup
 [5]: https://www.bigmarker.com/remote-meetup-go
 [6]: https://www.dailydrip.com/
 [7]: https://www.dailydrip.com/blog/organizing-a-remote-meetup-for-elm </description>
-      <pubDate>Sat, 28 May 2016 00:00:00 +0800</pubDate>
+      <pubDate>Sun, 05 Jun 2016 00:00:00 -0300</pubDate>
       <guid>http://news.remotemeetup.com/rmn-001.html</guid>
       <content:encoded>
-&lt;h1&gt;#001 - may 28th 2016&lt;/h1&gt;
+&lt;h1&gt;#001 - june 05 2016&lt;/h1&gt;
 &lt;div&gt;&lt;/div&gt;
 
 &lt;hr&gt;
@@ -100,9 +100,6 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 
 
 
-&lt;div&gt;Green Ruby Meetup&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;https://www.bigmarker.com/remote-meetup/Green-Ruby-Meetup-001&quot;&gt;Green Ruby Meetup&lt;/a&gt;&lt;/div&gt;
-
 &lt;div&gt;ParisRb - 7 June&lt;/div&gt;
 &lt;div&gt;&lt;a href=&quot;https://www.bigmarker.com/remote-meetup/ParisRb-June-7&quot;&gt;ParisRb - 7 June&lt;/a&gt;&lt;/div&gt;
 
@@ -112,7 +109,21 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 
 
 &lt;h3&gt;Elm&lt;/h3&gt;
-&lt;div&gt;Stay tunned on #organizers-elm channel to see the latest news!&lt;/div&gt;
+
+
+
+&lt;div&gt;An interview with Dan Abramov&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.bigmarker.com/remote-meetup/1-Elm-Remote-Meetup-by-DailiDrip&quot;&gt;An interview with Dan Abramov&lt;/a&gt;&lt;/div&gt;
+
+
+
+&lt;h3&gt;Javascript&lt;/h3&gt;
+
+
+
+&lt;div&gt;An interview with Dan Abramov&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.bigmarker.com/remote-meetup/interview-with-dan-abramov&quot;&gt;An interview with Dan Abramov&lt;/a&gt;&lt;/div&gt;
+
 
 
 
@@ -132,8 +143,8 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 
 &lt;div class=&quot;baseline&quot;&gt;&lt;/div&gt;
 </content:encoded>
-      <dc:date>2016-05-28T00:00:00+08:00</dc:date>
+      <dc:date>2016-06-05T00:00:00-03:00</dc:date>
     </item>
-    <dc:date>2016-06-06T07:49:54+08:00</dc:date>
+    <dc:date>2016-06-05T21:48:16-03:00</dc:date>
   </channel>
 </rss>
