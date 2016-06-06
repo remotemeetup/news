@@ -1,5 +1,5 @@
 ----------------------------------------------------
-Remote Meetup News #001 - may 28th 2016
+Remote Meetup News #001 - june 05 2016
 ----------------------------------------------------
 # How is it going with Remote Meetups?
 
@@ -38,7 +38,8 @@ to do that!
 
 [1]: http://golangbridge.org
 [2]: https://www.bigmarker.com
-[3]: https://www.hired.com
+[3]:
+https://hired.com/?utm_source=sponsor&utm_medium=remotemeetup&utm_campaign=q2-16
 [4]: https://www.bigmarker.com/remote-meetup
 [5]: https://www.bigmarker.com/remote-meetup-go
 [6]: https://www.dailydrip.com/
@@ -84,9 +85,6 @@ Go
 
 Ruby
 
-  Green Ruby Meetup
-  https://www.bigmarker.com/remote-meetup/Green-Ruby-Meetup-001
-
   ParisRb - 7 June
   https://www.bigmarker.com/remote-meetup/ParisRb-June-7
 
@@ -94,7 +92,14 @@ Ruby
   https://www.bigmarker.com/remote-meetup/An-interview-with-Mike-Perham-Sidekiq-creator
 
 Elm
-  Stay tunned on #organizers-elm channel to see the latest news!
+
+  An interview with Dan Abramov
+  https://www.bigmarker.com/remote-meetup/1-Elm-Remote-Meetup-by-DailiDrip
+
+Javascript
+
+  An interview with Dan Abramov
+  https://www.bigmarker.com/remote-meetup/interview-with-dan-abramov
 
 
 ----------------------------------------------------
