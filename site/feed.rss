@@ -6,13 +6,13 @@
   xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
   <channel>
     <title>Remote Meetup News</title>
-    <link>http://news.remotemeetup.com/feed.rss</link>
+    <link>http://remotemeetup.com/news/feed.rss</link>
     <description>All the news about Remote Meetups, the incoming events, the life of the community, the news from the front.</description>
     <language>en-US</language>
-    <pubDate>Mon, 06 Jun 2016 09:06:54 +0800</pubDate>
+    <pubDate>Mon, 06 Jun 2016 09:50:13 +0800</pubDate>
     <item>
       <title>Remote Meetup News #001</title>
-      <link>http://news.remotemeetup.com/rmn-001.html</link>
+      <link>http://remotemeetup.com/news/rmn-001.html</link>
       <description># How is it going with Remote Meetups?
 
 It's been a while that you have logged in our Slack Channel. I would like to just to say how we are going and the latest updates!
@@ -39,7 +39,7 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 [6]: https://www.dailydrip.com/
 [7]: https://www.dailydrip.com/blog/organizing-a-remote-meetup-for-elm </description>
       <pubDate>Sun, 05 Jun 2016 00:00:00 +0800</pubDate>
-      <guid>http://news.remotemeetup.com/rmn-001.html</guid>
+      <guid>http://remotemeetup.com/news/rmn-001.html</guid>
       <content:encoded>
 &lt;h1&gt;#001 - june 05 2016&lt;/h1&gt;
 &lt;div&gt;&lt;/div&gt;
@@ -145,6 +145,6 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 </content:encoded>
       <dc:date>2016-06-05T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2016-06-06T09:06:54+08:00</dc:date>
+    <dc:date>2016-06-06T09:50:13+08:00</dc:date>
   </channel>
 </rss>
