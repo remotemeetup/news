@@ -4,6 +4,7 @@
 <%= @c.upcoming.title %>
 
 <% @c.upcoming.links.each do |l| %><%= l.title %>
+<%= l.date %>
 <% if l.comment %><%= l.comment %>
 <% end %><%= l.url %>
 

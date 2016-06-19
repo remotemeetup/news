@@ -4,14 +4,17 @@ Remote Meetup News #001 - june 19 2016
 Upcoming Meetups
 
 An interview with Mike Perham
+Wednesday, June 22, 2016 / 20:00 - 21:00 UTC
 Open discussion with Mike Perham, creator of Sidekiq
 https://www.bigmarker.com/remote-meetup/An-interview-with-Mike-Perham-Sidekiq-creator
 
 #0 - Crystal Remote Meetup
+Saturday, July 16, 2016 / 04:00 - 05:00 UTC
 Ary Borenszweig, creator of Crystal will be here, and a lot of famous guests will attend.
 https://www.bigmarker.com/remote-meetup/0-Crystal-Remote-Meetup
 
 Go at Dropbox
+Wednesday, August 3, 2016 / 02:00 - 04:00 UTC
 Featuring Tammy Butow, SRE Manager at Dropbox
 https://www.bigmarker.com/remote-meetup-go/Go-at-Dropbox
 

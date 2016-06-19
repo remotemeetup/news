@@ -33,7 +33,7 @@ a { color: #369; }
 #templateBody a:link,#templateBody a:visited { color:#69a; font-weight:bold; text-decoration:underline; }
 #templateBody td.date { text-align: right; font-size: 12px; font-weight: bold; color: #aaa; }
 
-#templateFooter { font-family:Arial, sans serif; font-size:12px; line-height:125%; text-align:left; padding: 0 10px;}
+#templateFooter { font-family:Arial, sans serif; font-size:12px; line-height:125%; text-align:left; padding: 0 10px; border-top: 1px solid #ccc;}
 #templateFooter ul { list-style:none; margin:0; padding:0; }
 #templateFooter a:link,#templateFooter a:visited { text-decoration:none; }
 #templateFooter img { display:inline; }
@@ -52,6 +52,8 @@ a { color: #369; }
 #poweredby a { width:300px; font-size:12px; font-family:Courier new, monospace; color:#217844; text-decoration:none; }
 #poweredby a:hover { color:#ffffff; }
 
+.categories {font-size: 0.8em; font-weight: bold; }
+a.date { color: #666; text-decoration: none; }
 .baseline { padding-bottom: 8px; text-align: left; color: #666; }
 .duration { font-size: 12px; font-weight: bold; color: #999; font-family: Courier new, monospace; }
 table.meat { width: 100%; border: 0; }
@@ -102,10 +104,9 @@ So if you wish to receive the next editions in the future, you will have to subs
 
 <h2><%= @c.upcoming.title %></h2>
 <% @c.upcoming.links.each do |l| %>
-<h3><%= l.title %></h3>
-<div><%= l.date %></div>
-<% if l.comment %><div><%= l.comment %></div><% end %>
-<div class="link"><a href="<%= l.url %>"><%= l.url %></a></div>
+<h3><a href="<%= l.url %>"><%= l.title %></a></h3>
+<div><a href="<%= format(@config.tz_url, l.tz) %>" style="color:#666"><%= l.date %></a></div>
+<div><%= l.comment %> <span class="categories">(<%= l.categories %>)</span></div>
 <% end %>
 
 <hr>

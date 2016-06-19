@@ -11,18 +11,21 @@ upcoming:
       url: https://www.bigmarker.com/remote-meetup/An-interview-with-Mike-Perham-Sidekiq-creator
       comment: Open discussion with Mike Perham, creator of Sidekiq
       date: Wednesday, June 22, 2016 / 20:00 - 21:00 UTC
+      tz: 20160622T2000
       categories: ruby, crystal
 
     - title: "#0 - Crystal Remote Meetup"
       url: https://www.bigmarker.com/remote-meetup/0-Crystal-Remote-Meetup
       comment: Ary Borenszweig, creator of Crystal will be here, and a lot of famous guests will attend.
       date: Saturday, July 16, 2016 / 04:00 - 05:00 UTC
+      tz: 20160716T0400
       categories: crystal
 
     - title: Go at Dropbox
       url: https://www.bigmarker.com/remote-meetup-go/Go-at-Dropbox
       comment: Featuring Tammy Butow, SRE Manager at Dropbox
       date: "Wednesday, August 3, 2016 / 02:00 - 04:00 UTC"
+      tz: 20160803T0200
       categories: go
 
 edito:

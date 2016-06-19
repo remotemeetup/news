@@ -11,12 +11,10 @@
 <h2><%= @c.upcoming.title %></h2>
 <% @c.upcoming.links.each do |l| %>
 <h3><%= l.title %></h3>
-<div><%= l.date %></div>
-<% if l.comment %><div><%= l.comment %></div><% end %>
+<div><a href="<%= format(@config.tz_url, l.tz) %>" class="date"><%= l.date %></a></div>
+<div><%= l.comment %> <span class="categories">(<%= l.categories %>)</span></div>
 <div class="link"><a href="<%= l.url %>"><%= l.url %></a></div>
 <% end %>
-
-<hr>
 
 <div class="baseline"><%= @c.edito_html %></div>
 

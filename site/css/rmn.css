@@ -79,11 +79,13 @@ ul.letters li a span.date {
   background-color: #eee;
 }
 .main h2 {
-  margin-top: 5px;
+  border-top: 1px solid #bbb;
+  padding-top: 10px;
+  margin-top: 20px;
   margin-bottom: 5px;
 }
 .main h3 {
-  margin: 5px 0;
+  margin: 15px 0 5px 0;
 }
 .main blockquote {
   font-size: 14px;
@@ -94,15 +96,9 @@ ul.letters li a span.date {
 .main .comment {
   padding-bottom: 17px;
 }
-.main .date {
-  text-align: right;
-  color: #aaa;
-  font-weight: 200;
-}
-.main .date img {
-  position: relative;
-  top: 2px;
-  margin-left: 10px;
+a.date {
+  color: #468;
+  text-decoration: none;
 }
 .main .baseline {
   padding-bottom: 5px;
@@ -120,9 +116,14 @@ ul.letters li a span.date {
 .social li {
 
 }
-
+.categories {
+  font-size: 0.8em;
+  font-weight: bold;
+}
 #templateHeader {
-  color: #999;
+  margin-top: 20px;
+  color: #666;
+  font-size: 1.2em;
 }
 #footer {
   position: relative;
