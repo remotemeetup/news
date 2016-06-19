@@ -48,8 +48,6 @@
           .collapse.navbar-collapse.navbar-right#navcollapse
             %ul.nav.navbar-nav
               %li
-                %a{ href: 'http://news.remotemeetup.com' } remotemeetup.com
-              %li
                 %a{ href: 'recordings.html' } Recordings
               %li
                 %a{ href: 'about.html' } About
@@ -76,7 +74,10 @@
           = content
 
         .col-sm-12.col-md-3.rightbar.hidden-print
-          %p.header Remote Meetups, screencasts, Interviews, Lightning talks. Remote.
+          %p.header 
+            %a{ href: 'http://news.remotemeetup.com/', style: 'text-align: center;display:block;font-size: 1.4em' } remotemeetup.com
+            %br
+            Remote Meetups, screencasts, Interviews, Lightning talks. Remote.
           %p
           %form{ action: config.mailchimp_subscribe, method: 'post'}
             .text-center
