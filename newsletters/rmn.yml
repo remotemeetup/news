@@ -1,7 +1,7 @@
 ---
 template: v1
 edition: "001"
-pubdate: "june 05 2016"
+pubdate: "june 18 2016"
 edito:
   "# How is it going with Remote Meetups?
 
@@ -20,7 +20,8 @@ found a Nice tool: [BigMarker][2].
 BigMarker is a paid tool, we got a sponsorship from [Hired.com][3] which helped us
 to pay this Main Channel for Remote Meetup. [Channel is here!][4] Using this, the
 attendees interaction will be better. If you want, you can subscribe to this
-channel and get the latest meetups! We have a paid account up to 100 users.
+channel and get the latest meetups! After some meetups, we got a sponsorship from BigMarker itself
+and now we have a paid account up to 1000 attendees! It's awesome!
 
 
 Go Branch got a sponsorship from Compose.io, which helped them to pay
@@ -41,9 +42,13 @@ livestream their meetups.
 ## Elm Remote Meetup
 
 
-[DailyDrip][6] is [planning][7] to create a Elm Remote Meetup. We are also partner
-with DailyDrip. They will be using our Channel and using Remote Meetup to do that!
+[DailyDrip][6] has [planned][7] an Elm Remote Meetup. We are also partner
+with DailyDrip. They  did the first ever Elm Remote Meetup. Video is [here][8]
 
+## Crystal Remote Meetup
+
+
+The creator of Crystal is [organizing][9] a Crystal Remote Meetup. It will be in the next motnh. Stay tunned!
 
 [1]: http://golangbridge.org
 
@@ -58,6 +63,10 @@ with DailyDrip. They will be using our Channel and using Remote Meetup to do tha
 [6]: https://www.dailydrip.com/
 
 [7]: https://www.dailydrip.com/blog/organizing-a-remote-meetup-for-elm
+
+[8]: https://www.dailydrip.com/topics/elm-remote-meetup/drips/elm-remote-meetup-1
+
+[9]: https://twitter.com/CrystalLanguage/status/743821981691314178
 "
 
 done:
@@ -119,8 +128,8 @@ upcoming:
     - title: Elm
       links:
 
-        - title: An interview with Dan Abramov
-          url: https://www.bigmarker.com/remote-meetup/1-Elm-Remote-Meetup-by-DailiDrip
+        - title: Elm Remote Meetup by DailyDrip
+          url: https://www.dailydrip.com/topics/elm-remote-meetup/drips/elm-remote-meetup-1
 
     - title: Javascript
       links:
@@ -134,7 +143,7 @@ the last meetups. If you want to help, join our slack and use the channel #organ
 
 
 To complete, I would like to say a big thanks for everyone, specially: Iuri Fernandes, Carlisia Campos,
-William Kennedy, Filipe Costa, Narayan Chowdhury, Tad Hosford, Sebastian Sogamoso, Mose, João Moura,
+William Kennedy, Josh Adams, Mose, Filipe Costa, Narayan Chowdhury, Rafael Sales, Tad Hosford, Sebastian Sogamoso, João Moura,
 Lucas Amaral, André Mota and all the persons for our Slack channel!
 
 
@@ -159,6 +168,9 @@ don't do anything. We will send only for people who would like to keep registere
 
     - title: "Scaling RemoteMeetup — Thanks, Hired.com!"
       url: "https://medium.com/remote-meetup/scaling-remotemeetup-thanks-hired-com-b46ded1a2306#.m8q6nddhr"
+
+    - title: "DailyDrip and Elm Remote Meetups!"
+      url: "https://medium.com/remote-meetup/dailydrip-and-elm-remote-meetups-ab3c5710cd4f#.1r8k6xj3k"
 
 signature:
   "Franzé Jr.
