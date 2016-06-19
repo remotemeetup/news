@@ -7,7 +7,7 @@ base_url: http://remotemeetup.com/news
 copyright: the RM team
 rss_feed: https://medium.com/feed/@RemoteMeetup
 tz_url: "http://www.timeanddate.com/worldclock/converted.html?iso=%s&p1=0&p2=224&p3=179&p4=213&p5=195&p6=367&p7=241"
-mailchimp_subscribe: //remotemeetup.us13.list-manage.com/subscribe/post?u=4e6b1e9f9c268c64bbe9a2ba8&amp;id=8e5add8b1a
+mailchimp_subscribe: "http://remotemeetup.us13.list-manage.com/subscribe/post?u=4e6b1e9f9c268c64bbe9a2ba8&amp;id=8e5add8b1a"
 social:
   - title: Youtube
     url: https://www.youtube.com/channel/UCLa6UKKHaHE0PCqA73m8Irw
