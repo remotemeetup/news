@@ -7,39 +7,18 @@
 <div id="templateBody">
 
 <div>
-<div class="baseline">
-<%= @c.edito_html %>
-</div>
-
-<hr>
-
-<h2><%= @c.done.title %></h2>
-<% @c.done.links.each do |t| %>
-<div class="link"><a href="<%= t.url %>"><%= t.title %></a></div>
-<div class="comment"><%= t.comment %></div>
-<% end %>
-
-<hr>
 
 <h2><%= @c.upcoming.title %></h2>
-<% @c.upcoming.categories.each do |cat| %>
-<h3><%= cat.title %></h3>
-<% if cat.comment %><div><%= cat.comment %></div><% end %>
-<% if cat.links %>
-<% cat.links.each do |t| %>
-<div class="link"><a href="<%= t.url %>"><%= t.title %></a></div>
-<% end %><% end %><% end %>
-
-<hr>
-
-<div class="baseline"><%= @c.outro_html %></div>
-<h2><%= @c.outro.links_title %></h2>
-<% @c.outro.links.each do |t| %>
-<div class="link"><a href="<%= t.url %>"><%= t.title %></a></div>
+<% @c.upcoming.links.each do |l| %>
+<h3><%= l.title %></h3>
+<div><%= l.date %></div>
+<% if l.comment %><div><%= l.comment %></div><% end %>
+<div class="link"><a href="<%= l.url %>"><%= l.url %></a></div>
 <% end %>
+
 <hr>
 
-<div class="baseline"><%= @c.signature_html %></div>
+<div class="baseline"><%= @c.edito_html %></div>
 
 </div>
 </div>

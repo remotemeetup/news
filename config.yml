@@ -2,9 +2,10 @@
 title: Remote Meetup News
 description: All the news about Remote Meetups, the incoming events, the life of the community, the news from the front.
 keywords: meetup, remote, community, collaboration, geeks, webdev, techies
-contact_email: info@remotemeetup.com
+contact_email: news@remotemeetup.com
 base_url: http://remotemeetup.com/news
 copyright: the RM team
+rss+feed: https://medium.com/feed/@RemoteMeetup
 mailchimp_subscribe: //remotemeetup.us13.list-manage.com/subscribe/post?u=4e6b1e9f9c268c64bbe9a2ba8&amp;id=8e5add8b1a
 social:
   - title: Youtube
@@ -15,3 +16,5 @@ social:
     url: https://twitter.com/remotemeetup
   - title: Facebook
     url: https://facebook.com/remotemeetup
+  - title: BogMarker
+    url: https://www.bigmarker.com/remote-meetup

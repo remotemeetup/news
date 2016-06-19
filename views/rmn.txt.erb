@@ -1,45 +1,25 @@
 ----------------------------------------------------
 <%= @config.title %> #<%= @c.edition %> - <%= @c.pubdate %>
 ----------------------------------------------------
-<%= @c.edito_txt %>
-----------------------------------------------------
-<%= @c.done.title %>
-
-<% @c.done.links.each do |t| %>
-<%= t.title %> - <%= t.comment %>
-<%= t.url %>
-<% end %>
-----------------------------------------------------
 <%= @c.upcoming.title %>
 
-<% @c.upcoming.categories.each do |cat| %><%= cat.title %>
-<% if cat.comment %>  <%= cat.comment %>
-<% end %><% if cat.links %><% cat.links.each do |t| %>
-  <%= t.title %>
-  <%= t.url %>
-<% end %><% end %>
-<% end %>
-----------------------------------------------------
-<%= @c.outro_txt %>
+<% @c.upcoming.links.each do |l| %><%= l.title %>
+<% if l.comment %><%= l.comment %>
+<% end %><%= l.url %>
 
-<%= @c.outro.links_title %>
-<% @c.outro.links.each do |t| %>
-  <%= t.title %>
-  <%= t.url %>
-<% end %>
-
-<%= @c.signature_txt %>
+<% end %>----------------------------------------------------
+<%= @c.edito_txt %>
 ====================================================
 EOF
 
 Feel free to send us feedback or information at
-news@greenruby.org
+<%= @config.contact_email %>
 
-follow on Twitter @greenrubist
+follow on Twitter @remotemeetup
 forward to a friend *|FORWARD|*
 Subscribe *|LIST:SUBSCRIBE|*
 
-Copyright (c) *|CURRENT_YEAR|* Mose
+Copyright (c) *|CURRENT_YEAR|* The Remote Meetup Team
 http://creativecommons.org/licenses/by-sa/3.0/
 This publication is licensed under a
 Creative Commons Attribution-ShareAlike 3.0 License

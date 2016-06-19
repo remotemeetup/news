@@ -30,10 +30,6 @@ module Greeby
       @c = to_ostruct(YAML::load_file(File.join(@news_path, source)))
       @c.edito_html = RDiscount.new(@c.edito.to_s).to_html
       @c.edito_txt = wrap(@c.edito)
-      @c.outro_html = RDiscount.new(@c.outro.content.to_s).to_html
-      @c.outro_txt = wrap(@c.outro.content)
-      @c.signature_html = RDiscount.new(@c.signature.to_s).to_html
-      @c.signature_txt = wrap(@c.signature)
 
       erb = ERB.new(File.read(File.join(@views_path, 'rmn.html.erb')), 0, '<>')
       File.open(File.join(@news_path, 'html', "RMN-#{@c.edition}.html"), 'w') do |f|
@@ -53,8 +49,6 @@ module Greeby
 
       @c = to_ostruct(YAML::load_file(File.join(@news_path, source)))
       @c.edito_html = RDiscount.new(@c.edito.to_s).to_html
-      @c.outro_html = RDiscount.new(@c.outro.content.to_s).to_html
-      @c.signature_html = RDiscount.new(@c.signature.to_s).to_html
 
       letters = JSON.parse(File.read(File.join(@static_path, 'editions.json')))
       letters[@c.edition] = { "link" => "rmn-#{@c.edition}.html", "date" => @c.pubdate }
@@ -156,7 +150,11 @@ module Greeby
 
     def wrap(s, width=78)
       s.split("\n\n").collect! do |l|
-        l.length > width ? l.gsub(/(.{1,#{width}})(\s+|$)/, "\\1\n").strip : l
+        if /\[[-_0-9a-zA-Z]*\]:/.match l
+          l
+        else
+          l.length > width ? l.gsub(/(.{1,#{width}})(\s+|$)/, "\\1\n").strip : l
+        end
       end * "\n\n"
     end
 
