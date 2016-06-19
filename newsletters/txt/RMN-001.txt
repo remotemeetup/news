@@ -105,7 +105,7 @@ Elm
 Javascript
 
   An interview with Dan Abramov
-  https://www.bigmarker.com/remote-meetup/interview-with-dan-abramov
+  https://youtu.be/2VEqBejX-KE
 
 
 ----------------------------------------------------
