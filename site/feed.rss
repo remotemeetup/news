@@ -9,7 +9,7 @@
     <link>http://remotemeetup.com/news/feed.rss</link>
     <description>All the news about Remote Meetups, the incoming events, the life of the community, the news from the front.</description>
     <language>en-US</language>
-    <pubDate>Sun, 05 Jun 2016 23:11:57 -0300</pubDate>
+    <pubDate>Sun, 19 Jun 2016 09:45:18 +0800</pubDate>
     <item>
       <title>Remote Meetup News #001</title>
       <link>http://remotemeetup.com/news/rmn-001.html</link>
@@ -19,7 +19,7 @@ It's been a while that you have logged in our Slack Channel. I would like to jus
 
 Doing a Remote Meetup is a little bit difficult, because users report don't have the same feeling as a real meetup. For this reason, We were looking for some tools for helping us to do that. Here, a big thanks to Carlisia Campos and William Kennedy, [GoBridge][1] in general, people from our Go branch who have found a Nice tool: [BigMarker][2].
 
-BigMarker is a paid tool, we got a sponsorship from [Hired.com][3] which helped us to pay this Main Channel for Remote Meetup. [Channel is here!][4] Using this, the attendees interaction will be better. If you want, you can subscribe to this channel and get the latest meetups! We have a paid account up to 100 users.
+BigMarker is a paid tool, we got a sponsorship from [Hired.com][3] which helped us to pay this Main Channel for Remote Meetup. [Channel is here!][4] Using this, the attendees interaction will be better. If you want, you can subscribe to this channel and get the latest meetups! After some meetups, we got a sponsorship from BigMarker itself and now we have a paid account up to 1000 attendees! It's awesome!
 
 Go Branch got a sponsorship from Compose.io, which helped them to pay [their own channel][5]. It means, all the Remote Meetups from Go will be centralised in a single channel and not the Main Channel. BTW, if you want to learn Go, it's time! A lot of awesome upcoming meetups in the next weeks!
 
@@ -29,19 +29,23 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 
 ## Elm Remote Meetup
 
-[DailyDrip][6] is [planning][7] to create a Elm Remote Meetup. We are also partner with DailyDrip. They will be using our Channel and using Remote Meetup to do that!
+[DailyDrip][6] has [planned][7] an Elm Remote Meetup. We are also partner with DailyDrip. They  did the first ever Elm Remote Meetup. Video is [here][8]
+## Crystal Remote Meetup
 
+The creator of Crystal is [organizing][9] a Crystal Remote Meetup. It will be in the next motnh. Stay tunned!
 [1]: http://golangbridge.org
 [2]: https://www.bigmarker.com
 [3]: https://hired.com/?utm_source=sponsor&amp;utm_medium=remotemeetup&amp;utm_campaign=q2-16
 [4]: https://www.bigmarker.com/remote-meetup
 [5]: https://www.bigmarker.com/remote-meetup-go
 [6]: https://www.dailydrip.com/
-[7]: https://www.dailydrip.com/blog/organizing-a-remote-meetup-for-elm </description>
-      <pubDate>Sun, 05 Jun 2016 00:00:00 -0300</pubDate>
+[7]: https://www.dailydrip.com/blog/organizing-a-remote-meetup-for-elm
+[8]: https://www.dailydrip.com/topics/elm-remote-meetup/drips/elm-remote-meetup-1
+[9]: https://twitter.com/CrystalLanguage/status/743821981691314178 </description>
+      <pubDate>Sat, 18 Jun 2016 00:00:00 +0800</pubDate>
       <guid>http://remotemeetup.com/news/rmn-001.html</guid>
       <content:encoded>
-&lt;h1&gt;#001 - june 05 2016&lt;/h1&gt;
+&lt;h1&gt;#001 - june 18 2016&lt;/h1&gt;
 &lt;div&gt;&lt;/div&gt;
 
 &lt;hr&gt;
@@ -112,8 +116,8 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 
 
 
-&lt;div&gt;An interview with Dan Abramov&lt;/div&gt;
-&lt;div&gt;&lt;a href=&quot;https://www.bigmarker.com/remote-meetup/1-Elm-Remote-Meetup-by-DailiDrip&quot;&gt;An interview with Dan Abramov&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;Elm Remote Meetup by DailyDrip&lt;/div&gt;
+&lt;div&gt;&lt;a href=&quot;https://www.dailydrip.com/topics/elm-remote-meetup/drips/elm-remote-meetup-1&quot;&gt;Elm Remote Meetup by DailyDrip&lt;/a&gt;&lt;/div&gt;
 
 
 
@@ -140,11 +144,13 @@ Another idea we got on-the-fly was helping meetups. We are partner of two Meetup
 
 &lt;div class=&quot;link&quot;&gt;&lt;a href=&quot;https://medium.com/remote-meetup/scaling-remotemeetup-thanks-hired-com-b46ded1a2306#.m8q6nddhr&quot;&gt;Scaling RemoteMeetup — Thanks, Hired.com!&lt;/a&gt;&lt;/div&gt;
 
+&lt;div class=&quot;link&quot;&gt;&lt;a href=&quot;https://medium.com/remote-meetup/dailydrip-and-elm-remote-meetups-ab3c5710cd4f#.1r8k6xj3k&quot;&gt;DailyDrip and Elm Remote Meetups!&lt;/a&gt;&lt;/div&gt;
+
 
 &lt;div class=&quot;baseline&quot;&gt;&lt;/div&gt;
 </content:encoded>
-      <dc:date>2016-06-05T00:00:00-03:00</dc:date>
+      <dc:date>2016-06-18T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2016-06-05T23:11:57-03:00</dc:date>
+    <dc:date>2016-06-19T09:45:18+08:00</dc:date>
   </channel>
 </rss>
