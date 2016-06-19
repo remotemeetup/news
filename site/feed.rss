@@ -9,7 +9,7 @@
     <link>http://remotemeetup.com/news/feed.rss</link>
     <description>All the news about Remote Meetups, the incoming events, the life of the community, the news from the front.</description>
     <language>en-US</language>
-    <pubDate>Sun, 19 Jun 2016 10:03:19 +0800</pubDate>
+    <pubDate>Sun, 19 Jun 2016 10:15:46 +0800</pubDate>
     <item>
       <title>Remote Meetup News #001</title>
       <link>http://remotemeetup.com/news/rmn-001.html</link>
@@ -151,6 +151,6 @@ The creator of Crystal is [organizing][9] a Crystal Remote Meetup. It will be in
 </content:encoded>
       <dc:date>2016-06-18T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2016-06-19T10:03:19+08:00</dc:date>
+    <dc:date>2016-06-19T10:15:46+08:00</dc:date>
   </channel>
 </rss>
