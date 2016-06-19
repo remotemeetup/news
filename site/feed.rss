@@ -9,7 +9,7 @@
     <link>http://remotemeetup.com/news/feed.rss</link>
     <description>All the news about Remote Meetups, the incoming events, the life of the community, the news from the front.</description>
     <language>en-US</language>
-    <pubDate>Sun, 19 Jun 2016 16:11:44 +0800</pubDate>
+    <pubDate>Sun, 19 Jun 2016 16:58:14 +0800</pubDate>
     <item>
       <title>Remote Meetup News #001</title>
       <link>http://remotemeetup.com/news/rmn-001.html</link>
@@ -79,6 +79,6 @@ Founder of Remote Meetup
 </content:encoded>
       <dc:date>2016-06-19T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2016-06-19T16:11:44+08:00</dc:date>
+    <dc:date>2016-06-19T16:58:14+08:00</dc:date>
   </channel>
 </rss>

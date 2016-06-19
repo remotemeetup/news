@@ -37,6 +37,11 @@ namespace :generate do
 
 end
 
+task :testrss do
+  builder = Greeby::Builder.new
+  builder.get_rss
+end
+
 task :generate do
   Rake::Task["generate:full"].invoke
 end

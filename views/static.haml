@@ -69,6 +69,14 @@
                   %a{ href: letter['link'] }
                     = num
                     %span.date= letter['date'].gsub(/ [0-9]+$/,'')
+          .blog
+            %h3 Blog posts
+            %ul.nav.nav-sidebar.blogposts
+              - rss.each do |post|
+                %li
+                  %a{ href: post[:url] }
+                    .date= post[:date]
+                    = post[:title]
 
         .col-sm-9.col-md-7.main
           = content

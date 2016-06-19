@@ -68,6 +68,7 @@ module Greeby
       page.content = File.read(File.join(@news_path, 'partials', "RMN-#{@c.edition}.html"))
       page.letters = Hash[letters.sort_by { |edition,data| -edition.to_i }]
       page.config = @config
+      page.rss = get_rss
       html = haml_engine.render(page)
       File.open(File.join(@static_path, "rmn-#{page.name}.html"),'w') do |f|
         f.puts html
@@ -95,6 +96,7 @@ module Greeby
         letters = JSON.parse(File.read(File.join(@static_path, 'editions.json')))
         page.letters = Hash[letters.sort_by { |edition,data| -(edition.to_i) }]
         page.config = @config
+        page.rss = get_rss
         html = haml_engine.render(page)
         File.open(File.join(@static_path, "#{page.name}.html"),'w') do |f|
           f.puts html
@@ -130,6 +132,21 @@ module Greeby
       File.open(File.join(@static_path, "feed.rss"),'w') do |f|
         f.puts rss
       end
+    end
+
+    def get_rss
+      require "rss"
+      require 'open-uri'
+      url = @config.rss_feed
+      out = []
+      open(url) do |rss|
+        feed = RSS::Parser.parse(rss)
+        feed.items.each do |item|
+          title = item.title.gsub(/"([^"]*)".*/, "\\1")
+          out << { title: title,  url: item.link, date: item.pubDate.strftime("%Y-%m-%d") }
+        end
+      end
+      out
     end
 
     private
