@@ -1,6 +1,18 @@
 # Remote Meetups Recordings
 
 
+## [An interview with Mike Perham](https://youtu.be/feI4OGhhW-E)
+
+An interview with Mike Perham, Sidekiq creator, about Sidekiq, Crystal and running an OSS-based business.
+
+with Mike Perham
+
+Streamed live on June 22, 2016
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/feI4OGhhW-E" frameborder="0" allowfullscreen></iframe>
+
+<p></p>
+
 ## [ChatOps - When communication matters](https://youtu.be/idifdePbVGM)
 
 On this meetup we will have  Rajat Gupta, a consultant developer from Thoughtworks India. He will talk about ChatOps and how it can improve our teams.
